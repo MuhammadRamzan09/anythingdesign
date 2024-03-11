@@ -1,313 +1,2472 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html>
   <head>
-    <!-- Metas -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <meta
-      name="keywords"
-      content="HTML5 Template Gavi Multi-Purpose themeforest"
-    />
-    <meta name="description" content="Gavi - Multi-Purpose HTML5 Template" />
-    <meta name="author" content="" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<< Title >>-->
+    <title>Matias - Personal Portfolio Template</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/logo/favicon.png" />
 
-    <!-- Title  -->
-    <title>Gavi</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/imgs/favicon.ico" />
+    <script src="./assets/js/tailwindCongfig.js"></script>
 
-    <!-- Google Fonts -->
+    <!-- -- magnific-popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- ------ aos animation -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+
+    <!-- --- -icons -->
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
       rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      crossorigin="anonymous"
     />
 
-    <!-- Plugins -->
-    <link rel="stylesheet" href="assets/css/plugins.css" />
-    <link href="../main.css" rel="stylesheet" />
-
-    <!-- Core Style Css -->
+    <!-- ---- main css -->
+    <link href="./assets/css/style.css" rel="stylesheet" />
   </head>
-
-  <body class="bg-sub_dark text-[14px] lg:px-[40px] relative" data-scroll-index="0">
-    <div class="fixed -left-[45px] bottom-[120px] rotate-90 translate-y-[50%]
-    "    >
-          <div class="butn-presv [perspective:500px]">
-              <a href="#0" class="butn butn-sm px-[30px] block w-full h-full py-[13px] text-[13px] rounded-md border border-transparent bg-sub_light [transform:rotateX(20deg)] hover:[transform:rotateX(0deg)]" data-scroll-nav="5">
-                  <span class="text-dark">Contact Us</span>
-              </a>
-          </div>
-      </div>
+  <body>
     <div
-      class="loader-wrap fixed inset-0 flex items-center justify-center z-50 overflow-hidden bg-transparent"
+      class="bg-banner_image bg-no-repeat bg-center bg-cover bg-fixed relative overflow-hidden"
     >
-      <svg
-        class="absolute w-screen h-screen fill-current text-[#131313]"
-        viewBox="0 0 1000 1000"
-        preserveAspectRatio="none"
+      <!-- header start -->
+      <header
+        class="header relative w-full border-b border-b-clr_cusborder z-10 xxl:after:block after:hidden after:absolute after:right-[calc(20%-30px)] after:top-0 after:w-[1px] after:h-full after:content:[''] after:bg-clr_cusborder xxl:before:block before:hidden before:absolute before:left-[calc(15%-40px)] before:top-0 before:w-[1px] before:h-full before:content:[''] before:bg-clr_cusborder"
       >
-        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-      </svg>
+        <div
+          class="xxl:max-w-[1805px] xl:max-w-[1350px] lg:max-w-[960px] md:max-w-2xl sm:max-w-xl xl mx-auto px-3"
+        >
+          <div class="flex justify-between items-center w-full relative py-5">
+            <div class="main__logo">
+              <a href="index.html" class="block xl:w-[150px] w-[100px]">
+                <img
+                  src="./assets/img/logo/logo.png"
+                  alt="logo"
+                  class="w-full h-full object-contain"
+                />
+              </a>
+            </div>
+            <ul
+              class="menus flex lg:flex-row flex-col lg:items-center opacity-0 invisible lg:opacity-100 lg:visible lg:gap-[14px] gap-0 fixed z-50 lg:static top-20 left-0 w-full lg:w-auto bg-clr_subtitle min-h-screen lg:min-h-full lg:bg-transparent duration-500 origin-top px-3"
+            >
+              <li
+                class="relative transition-all border-b-2 border-b-clr_cusborder lg:border-none last:border-none lg:py-0 py-4"
+              >
+                <a
+                  href="./index.html"
+                  class="text-clr_white font-500 xxl:text-base text-sm uppercase lg:py-[10px] py-0 xxl:px-[16px] xl:px-[10px] px-1 hover:text-clr_base"
+                >
+                  Home
+                </a>
+              </li>
+              <li
+                class="relative transition-all border-b-2 border-b-clr_cusborder lg:border-none last:border-none lg:py-0 py-4"
+              >
+                <a
+                  href="./index.html#about"
+                  class="text-clr_white font-500 xxl:text-base text-sm uppercase lg:py-[10px] py-0 xxl:px-[16px] xl:px-[10px] px-1 hover:text-clr_base"
+                >
+                  About
+                </a>
+              </li>
+              <li
+                class="relative transition-all border-b-2 border-b-clr_cusborder lg:border-none last:border-none lg:py-0 py-4"
+              >
+                <a
+                  href="./index.html#projects"
+                  class="text-clr_white font-500 xxl:text-base text-sm uppercase lg:py-[10px] py-0 xxl:px-[16px] xl:px-[10px] px-1 hover:text-clr_base"
+                >
+                  Work
+                </a>
+              </li>
+              <li
+                class="relative transition-all border-b-2 border-b-clr_cusborder lg:border-none last:border-none lg:py-0 py-4 group/dropdown dropdown"
+              >
+                <a
+                  href="./index.html#services"
+                  class="text-clr_white font-500 xxl:text-base text-sm uppercase lg:py-[10px] py-0 xxl:px-[16px] xl:px-[10px] px-1 hover:text-clr_base"
+                >
+                  Services
+                </a>
+                <ul
+                  class="lg:absolute lg:block hidden static top-[50px] left-0 w-[250px] px-5 py-2 leading-9 z-50 transition-all lg:bg-white lg:shadow-mainShadow justify-center gap-[5px] before:absolute before:content-[''] before:-top-[17.6px] before:left-[26px] before:w-0 before:h-0 before:border-l-[13px] before:border-l-transparent before:border-r-[13px] before:border-r-transparent lg:before:border-b-[18px] lg:before:border-b-white lg:opacity-0 lg:invisible lg:translate-y-11 duration-500 group-hover/dropdown:opacity-100 group-hover/dropdown:visible group-hover/dropdown:translate-y-0 dropdownItem"
+                >
+                  <li>
+                    <a
+                      href="./services.html"
+                      class="lg:text-clr_body text-white duration-500 hover:text-clr_base hover:pl-3 block"
+                    >
+                      Services
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./serviceDetails.html"
+                      class="lg:text-clr_body text-white duration-500 hover:text-clr_base hover:pl-3 block"
+                    >
+                      Service Details
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="relative transition-all border-b-2 border-b-clr_cusborder lg:border-none last:border-none lg:py-0 py-4"
+              >
+                <a
+                  href="./index.html#testimonial"
+                  class="text-clr_white font-500 xxl:text-base text-sm uppercase lg:py-[10px] py-0 xxl:px-[16px] xl:px-[10px] px-1 hover:text-clr_base"
+                >
+                  TESTIMONIAL
+                </a>
+              </li>
+              <li
+                class="relative transition-all border-b-2 border-b-clr_cusborder lg:border-none last:border-none lg:py-0 py-4 group/dropdown dropdown"
+              >
+                <a
+                  href="./index.html#blog"
+                  class="text-clr_white font-500 xxl:text-base text-sm uppercase lg:py-[10px] py-0 xxl:px-[16px] xl:px-[10px] px-1 hover:text-clr_base"
+                >
+                  Blog
+                </a>
+                <ul
+                  class="lg:absolute lg:block hidden static top-[50px] left-0 w-[250px] px-5 py-2 leading-9 z-50 transition-all lg:bg-white lg:shadow-mainShadow justify-center gap-[5px] before:absolute before:content-[''] before:-top-[17.6px] before:left-[26px] before:w-0 before:h-0 before:border-l-[13px] before:border-l-transparent before:border-r-[13px] before:border-r-transparent lg:before:border-b-[18px] lg:before:border-b-white lg:opacity-0 lg:invisible lg:translate-y-11 duration-500 group-hover/dropdown:opacity-100 group-hover/dropdown:visible group-hover/dropdown:translate-y-0 dropdownItem"
+                >
+                  <li>
+                    <a
+                      href="./blogs.html"
+                      class="lg:text-clr_body text-white duration-500 hover:text-clr_base hover:pl-3 block"
+                    >
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./blogDetails.html"
+                      class="lg:text-clr_body text-white duration-500 hover:text-clr_base hover:pl-3 block"
+                    >
+                      Blog Details
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="relative transition-all border-b-2 border-b-clr_cusborder lg:border-none last:border-none lg:py-0 py-4"
+              >
+                <a
+                  href="./contact.html"
+                  class="text-clr_white font-500 xxl:text-base text-sm uppercase lg:py-[10px] py-0 xxl:px-[16px] xl:px-[10px] px-1 hover:text-clr_base"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <div class="flex items-center gap-4">
+              <a
+                href=""
+                class="flex items-center gap-2 xxl:px-[26px] xxl:py-[19px] lg:px-[16px] lg:py-[9px] px-[11px] py-[7px] font-medium text-lg capitalize relative bg-clr_base overflow-hidden rounded-[5px] transition-all text-clr_subtitle max-h-[58px] before:absolute before:content-[''] before:bottom-full before:bg-[#aad302] before:left-0 before:w-full before:h-full before:duration-500 before:bg-opacity-80 hover:before:bottom-0"
+              >
+                <span class="text-sm xl:text-lg z-10 relative duration-500">
+                  Let's Talk
+                </span>
+                <span>
+                  <i
+                    class="bi bi-arrow-right text-xl z-10 relative duration-500"
+                  ></i>
+                </span>
+              </a>
+              <div class="header-bar lg:hidden">
+                <i
+                  class="bi bi-x text-[32px] text-clr_white cursor-pointer hidden menuCloseIcon"
+                ></i>
 
-      <div
-        class="loader-wrap-heading relative z-20 text-xl font-thin tracking-wider uppercase"
-      >
-        <div class="load-text">
-          <span class="inline-block animate-loading mx-[20px]">L</span>
-          <span
-            style="animation-delay: 0.1s"
-            class="inline-block animate-loading mx-[20px]"
-            >o</span
+                <i
+                  class="bi bi-list text-[32px] text-clr_white cursor-pointer menuActiveIcon"
+                ></i>
+              </div>
+              <div
+                class="drawerActiveIcon xl:w-[58px] xl:h-[58px] w-[39px] h-[39px] rounded-md flex items-center justify-center bg-clr_white cursor-pointer"
+              >
+                <i
+                  class="bi bi-list lg:text-[32px] text-[22px] text-clr_title"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- --------- Drawer -->
+          <div
+            class="w-80 h-full fixed z-50 top-0 duration-500 overflow-y-scroll bg-black -right-80 drawer"
           >
-          <span
-            style="animation-delay: 0.2s"
-            class="inline-block animate-loading mx-[20px]"
-            >a</span
+            <div
+              class="flex justify-center items-center w-10 h-10 m-[10px] bg-clr_base ml-auto p-[5px] rounded-md hover:cursor-pointer drawerCloseIcon"
+            >
+              <i class="bi-x-lg text-[22px] text-clr_mtitle"> </i>
+            </div>
+            <div class="grid py-10 px-5">
+              <a href="" class="mb-5">
+                <img src="./assets/img/logo/logo.png" alt="img" />
+              </a>
+              <p class="text-sm mb-10 text-clr_pra break-words leading-normal">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                consectetur, aliquam quaerats voluptatem. Ut enim ad minima
+                veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem
+                velit esse quam nihil
+              </p>
+              <div class="grid gap-6 mb-10">
+                <div>
+                  <div>
+                    <span
+                      class="block mb-2 uppercase text-clr_pra font-bold text-sm"
+                    >
+                      address
+                    </span>
+                    <span
+                      class=" capitalize text-white font-medium leading-[120%]"
+                    >
+                      Victoria Street London,
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <span
+                      class="block mb-2 uppercase text-clr_pra font-bold text-sm"
+                    >
+                      email
+                    </span>
+                    <a
+                      href=""
+                      class=" capitalize text-white font-medium leading-[120%]"
+                    >
+                      matias999@.com
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <span
+                      class="block mb-2 uppercase text-clr_pra font-bold text-sm"
+                    >
+                      call now
+                    </span>
+                    <a
+                      href=""
+                      class=" capitalize text-white font-medium leading-[120%]"
+                    >
+                      +98 4758 2154 021
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:mb-20 mb-14 relative">
+                <ul class="social flex gap-[14px]">
+                  <li>
+                    <a
+                      href=""
+                      class="w-[45px] h-[45px] rounded-full bg-clr_base border border-clr_base flex justify-center items-center"
+                    >
+                      <i class="bi-facebook text-clr_title"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="w-[45px] h-[45px] rounded-full bg-clr_base border border-clr_base flex justify-center items-center"
+                    >
+                      <i class="bi-twitter text-clr_title"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="w-[45px] h-[45px] rounded-full bg-clr_base border border-clr_base flex justify-center items-center"
+                    >
+                      <i class="bi-linkedin text-clr_title"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="w-[45px] h-[45px] rounded-full bg-clr_base border border-clr_base flex justify-center items-center"
+                    >
+                      <i class="bi-youtube text-clr_title"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a
+                href=""
+                class="flex justify-center items-center gap-2 font-medium px-[30px] pt-5 pb-[21px] text-lg leading-[120%] capitalize relative bg-clr_base overflow-hidden rounded-[5px] duration-500 text-clr_subtitle before:absolute before:content-[''] before:bottom-full before:bg-[#aad302] before:left-0 before:w-full before:h-full before:duration-500 before:bg-opacity-80 hover:before:bottom-0"
+              >
+                <span class="z-10 relative duration-500">
+                  <i class="bi-chevron-right"> </i>
+                </span>
+                <span class="z-10 relative duration-500"> Let's Talk </span>
+              </a>
+            </div>
+          </div>
+          <!-- --------- Drawer -->
+        </div>
+      </header>
+      <!-- header End -->
+
+      <!-- ------------------ Banner start -->
+      <section id="home">
+        <div
+          class="xl:max-w-[1350px] lg:max-w-[960px] md:max-w-2xl sm:max-w-xl xl mx-auto px-3"
+        >
+          <div class="grid md:grid-cols-[70%_auto] gap-5">
+            <div>
+              <div
+                class="banner__content xl:pt-[140px] xl:pb-[180px] lg:pt-[120px] lg:pb-[150px] md:pt-[90px] md:pb-[100px] sm:pt-[80px] sm:pb-[85px] py-[60px] xl:pl-10 pl-0"
+              >
+                <a
+                  href=""
+                  class="bn__currently md:text-[24px] text-base leading-[140%] md:mb-[50px] mb-6 border-b border-b-clr_white text-clr_white inline-block pb-4 hover:text-clr_base hover:border-b-clr_base capitalize"
+                >
+                  <span class="block"> Currently available for freelance </span>
+                  <span class="flex gap-4 items-center">
+                    worldwide
+                    <i class="">
+                      <i class="bi bi-arrow-up-right"></i>
+                    </i>
+                  </span>
+                </a>
+                <h1
+                  class="lg:text-[100px] md:text-[60px] sm:text-[45px] text-[34px] font-semibold sm:mb-[50px] mb-[30px] leading-[120%]"
+                >
+                  <span class="hone text-clr_white"> Creative Visual</span>
+                  <span class="block designers" data-text="Designer">
+                    Designer
+                  </span>
+                </h1>
+                <div class="flex items-center gap-6">
+                  <img
+                    src="./assets/img/banner/bn-arrow.png"
+                    class="vid__arrow animate-cir5"
+                    alt="img"
+                  />
+                  <a
+                    href="https://www.youtube.com/watch?v=zFuJgOiUEso&amp;ab_channel=SujithRajendran"
+                    class="video__80 video-btn cursor-pointer relative xl:w-20 xl:h-20 sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] flex justify-center items-center rounded-full border border-clr_white before:absolute before:border-2 before:border-clr_white before:w-full before:h-full before:content:[''] before:rounded-full before:animate-scales"
+                  >
+                    <i class="text-clr_white sm:text-[42px] text-[30px]">
+                      <i class="bi bi-play-fill"></i>
+                    </i>
+                  </a>
+                  <span
+                    class="proces sm:text-xl text-base text-clr_white w-[67px]"
+                    >Work Process</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                data-aos="fade-up-right"
+                data-aos-duration="300"
+                class="banner__thumb absolute xxl:left-[calc(50%--120px)] left-[calc(50%--80px)] bottom-0"
+              >
+                <img
+                  src="./assets/img/banner/banner-man.png"
+                  alt="man-img"
+                  class="w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="banner__leftinfo hidden absolute -left-[40px] top-1/2 -translate-y-1/2 xl:grid gap-[220px]"
+        >
+          <div
+            class="left__infomobile rotate-90 flex items-center justify-center gap-[16px]"
           >
-          <span
-            style="animation-delay: 0.3s"
-            class="inline-block animate-loading mx-[20px]"
-            >d</span
+            <a href="">
+              <img
+                src="./assets/img/banner/dial.png"
+                alt="img"
+                class="-rotate-90 w-4"
+              />
+            </a>
+            <a href="" class="text-clr_white">(+02)-574-328-301</a>
+          </div>
+          <div
+            class="right__infoscroll flex items-center justify-center gap-[50px] rotate-90 mb-[0px]"
           >
-          <span
-            style="animation-delay: 0.4s"
-            class="inline-block animate-loading mx-[20px]"
-            >i</span
+            <a href="" class="scroll text-clr_pra uppercase text-[15px]">
+              scroll down
+            </a>
+            <a href="" class="scroll__bar -rotate-90">
+              <img
+                src="./assets/img/banner/scroll-down.png"
+                alt="img"
+                class="w-5"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          class="banner__rightinfo hidden absolute right-0 top-[55%] -translate-y-1/2 xl:grid gap-[150px]"
+        >
+          <div
+            class="right__infoscroll flex items-center justify-center gap-[50px] rotate-90"
           >
-          <span
-            style="animation-delay: 0.5s"
-            class="inline-block animate-loading mx-[20px]"
-            >n</span
-          >
-          <span
-            style="animation-delay: 0.6s"
-            class="inline-block animate-loading mx-[20px]"
-            >g</span
-          >
+            <a href="" class="scroll text-clr_pra uppercase text-[15px]">
+              Follow Me
+            </a>
+            <a href="" class="scroll__bar -rotate-90">
+              <img
+                src="./assets/img/banner/scroll-down.png"
+                alt="img"
+                class="w-5"
+              />
+            </a>
+          </div>
+          <div class="banner__xlsocial">
+            <ul
+              class="banner__soci grid justify-center lg:gap-[14px] gap-[10px]"
+            >
+              <li>
+                <a
+                  href=""
+                  class="lg:w-[46px] lg:h-[46px] h-[38px] w-[38xp] rounded-full bg-[rgb(18_18_18)] flex justify-center items-center"
+                >
+                  <i class="bi bi-facebook text-white"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="lg:w-[46px] lg:h-[46px] h-[38px] w-[38xp] rounded-full bg-[rgb(18_18_18)] flex justify-center items-center"
+                >
+                  <i class="bi bi-twitter text-white"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="lg:w-[46px] lg:h-[46px] h-[38px] w-[38xp] rounded-full bg-[rgb(18_18_18)] flex justify-center items-center"
+                >
+                  <i class="bi bi-youtube text-white"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="lg:w-[46px] lg:h-[46px] h-[38px] w-[38xp] rounded-full bg-[rgb(18_18_18)] flex justify-center items-center"
+                >
+                  <i class="bi bi-linkedin text-white"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="lg:w-[46px] lg:h-[46px] h-[38px] w-[38xp] rounded-full bg-[rgb(18_18_18)] flex justify-center items-center"
+                >
+                  <i class="bi bi-instagram text-white"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------ Banner end -->
+    </div>
+    <!-- ---------- Marquee 1 -->
+    <div
+      class="relative marquee-wrapper text-slider bg-clr_base h-[90px] overflow-hidden"
+    >
+      <div class="slide-track">
+        <div class="slide">
+          <img src="./assets/img/banner/ts1.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts2.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts3.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts4.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts1.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts2.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts3.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts4.png" alt="" />
         </div>
       </div>
     </div>
-
-    <div class="cursor"></div>
-    <div class="progress-wrap cursor-pointer">
-      <svg
-        class="progress-circle svg-content"
-        width="100%"
-        height="100%"
-        viewBox="-1 -1 102 102"
-      >
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-      </svg>
-    </div>
-
-    <div
-      class="lines fixed inset-0 !w-full h-screen flex z-[-1] pointer-events-none"
-    >
-      <span
-        class="h-full !w-[10%] mx-[5%] border-r border-l border-white border-opacity-5 border-dashed"
-      ></span>
-      <span
-        class="h-full !w-[10%] mx-[5%] border-r border-l border-white border-opacity-5 border-dashed"
-      ></span>
-      <span
-        class="h-full !w-[10%] mx-[5%] border-r border-l border-white border-opacity-5 border-dashed"
-      ></span>
-      <span
-        class="h-full !w-[10%] mx-[5%] border-r border-l border-white border-opacity-5 border-dashed"
-      ></span>
-      <span
-        class="h-full !w-[10%] mx-[5%] border-r border-l border-white border-opacity-5 border-dashed"
-      ></span>
-    </div>
-
-    <div class="nav-top z-20 relative  pt-[30px] pb-[30px]">
+    <!-- ---------- Marquee 1 -->
+    <!-- ------------- About -->
+    <section class="about__section pt_120 pb_120" id="about">
       <div
-        class="w-full relative mx-auto xxl:max-w-[1280px] xl:max-w-[1140px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] mx-auto px-[3px]"
+        class="xl:max-w-[1350px] lg:max-w-[960px] md:max-w-2xl sm:max-w-xl xl mx-auto px-3"
       >
-        <div class="grid grid-cols-3">
-          <div class="col-md-4 px-[15px] flex items-center">
-            <a href="#0" class="logo w-[60px]">
-              <img src="assets/imgs/logo-light.png" alt="" />
-            </a>
+        <!-- --------------- Heading -->
+        <div
+          class="personal__head text-center mx-auto xl:mb-[60px] md:mb-[50px] mb-[30px]"
+        >
+          <img
+            src="./assets/img/about/section-star.png"
+            class="mb-[30px] animate-spin mx-auto"
+            alt="star"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
+          <p
+            class="descrp lg:text-[42px] md:text-[28px] sm:text-xl text-base font-medium text-clr_white lg:leading-[66px]"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            I'm David Matias, I'm a Brand & Webflow Designer, Currently residing
+            in the lush Victoria Street London, Matias operates globally and is
+            ready to take on any design challenge.
+          </p>
+        </div>
+        <!-- --------------- Heading -->
+        <div class="singletab">
+          <!-- ----------- Nav -->
+          <ul
+            class="tablinks flex items-center justify-center flex-wrap gap-5 mb-[100px]"
+          >
+            <li>
+              <button
+                data="about"
+                class="tablink bg-clr_base text-clr_title rounded-[10px] lg:text-lg text-sm uppercase font-medium border-none lg:py-4 lg:px-[30px] py-[10px] px-5 text-center"
+              >
+                About
+              </button>
+            </li>
+            <li>
+              <button
+                data="experience"
+                class="tablink bg-[#1D1D1D] text-clr_white rounded-[10px] lg:text-lg text-sm uppercase font-medium border-none lg:py-4 lg:px-[30px] py-[10px] px-5 text-center"
+              >
+                Experience
+              </button>
+            </li>
+            <li>
+              <button
+                data="education"
+                class="tablink bg-[#1D1D1D] text-clr_white rounded-[10px] lg:text-lg text-sm uppercase font-medium border-none lg:py-4 lg:px-[30px] py-[10px] px-5 text-center"
+              >
+                Education
+              </button>
+            </li>
+            <li>
+              <button
+                data="skills"
+                class="tablink bg-[#1D1D1D] text-clr_white rounded-[10px] lg:text-lg text-sm uppercase font-medium border-none lg:py-4 lg:px-[30px] py-[10px] px-5 text-center"
+              >
+                Skills
+              </button>
+            </li>
+          </ul>
+          <!-- ----------- Nav -->
+          <div class="tabcontents relative">
+            <!-- ---------- Personal Info -->
+            <div
+              data="about"
+              class="tabitem w-full duration-700 z-10 opacity-100 translate-y-0"
+            >
+              <!-- translate-y-20 -z-10 opacity-0 -->
+              <div
+                class="about__v1wrap bg-common_bg bg-center bg-no-repeat bg-cover rounded-[10px] overflow-hidden sm:p-[60px] py-[30px] px-[10px]"
+              >
+                <div
+                  class="grid lg:grid-cols-[41%_auto] gap-6 lg:items-start align-items-center"
+                >
+                  <div>
+                    <div
+                      class="about__onethumb w-full"
+                      data-aos="zoom-in"
+                      data-aos-duration="500"
+                    >
+                      <img
+                        src="./assets/img/about/personal-infothumb.png"
+                        alt="img"
+                        class="w-full"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="about__onecontent lg:pl-10 pl-0">
+                      <h2
+                        class="text-[42px] font-semibold text-clr_white mb-5"
+                        data-aos="fade-up"
+                        data-aos-duration="500"
+                      >
+                        Personal Info
+                      </h2>
+                      <p
+                        class="text-lg text-clr_pra mb-0"
+                        data-aos="fade-up"
+                        data-aos-duration="500"
+                      >
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor
+                        sit consectetur, aliquam quaerats voluptatem. Ut enim ad
+                        minima veniam, exercitationem laboriosam, nisi ut
+                        aliquid ex ea autem velit esse quam nihil
+                      </p>
+                      <div class="mt-10">
+                        <div class="">
+                          <div
+                            class="grid xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-2 grid-cols-1 justify-between gap-6"
+                            data-aos="zoom-in"
+                          >
+                            <div
+                              class="abox rounded-[10px] bg-[#1D1D1D] p-[35px] border border-[#1D1D1D] duration-500 hover:border-clr_base"
+                            >
+                              <div class="">
+                                <span
+                                  class="ptext text-clr_pra fz-18 md:text-lg text-base mb-5 block"
+                                >
+                                  Email
+                                </span>
+                                <a href="" class="text-xl text-clr_white"
+                                  >dev.mostafizar.com</a
+                                >
+                              </div>
+                            </div>
+                            <div
+                              class="abox rounded-[10px] bg-[#1D1D1D] p-[35px] border border-[#1D1D1D] duration-500 hover:border-clr_base"
+                            >
+                              <div class="">
+                                <span
+                                  class="ptext text-clr_pra fz-18 md:text-lg text-base mb-5 block"
+                                >
+                                  Phone
+                                </span>
+                                <a href="" class="text-xl text-clr_white"
+                                  >01575699193</a
+                                >
+                              </div>
+                            </div>
+                            <div
+                              class="abox rounded-[10px] bg-[#1D1D1D] p-[35px] border border-[#1D1D1D] duration-500 hover:border-clr_base"
+                            >
+                              <div class="">
+                                <span
+                                  class="ptext text-clr_pra fz-18 md:text-lg text-base mb-5 block"
+                                >
+                                  Address
+                                </span>
+                                <a href="" class="text-xl text-clr_white"
+                                  >Dahagram, Lalmonirhat</a
+                                >
+                              </div>
+                            </div>
+                            <div
+                              class="abox rounded-[10px] bg-[#1D1D1D] p-[35px] border border-[#1D1D1D] duration-500 hover:border-clr_base"
+                            >
+                              <div class="">
+                                <span
+                                  class="ptext text-clr_pra fz-18 md:text-lg text-base mb-5 block"
+                                >
+                                  Follow
+                                </span>
+                                <ul class="flex items-center xl:gap-4 gap-2">
+                                  <li>
+                                    <a href="" class="text-clr_white text-xl">
+                                      <i class="bi-facebook"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="" class="text-clr_white text-xl">
+                                      <i class="bi-twitter"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="" class="text-clr_white text-xl">
+                                      <i class="bi-instagram"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="" class="text-clr_white text-xl">
+                                      <i class="bi-youtube"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- Personal Info -->
+
+            <!-- ---------- Experience Info -->
+            <div
+              data="experience"
+              class="tabitem w-full duration-700 top-0 absolute translate-y-20 -z-10 opacity-0"
+            >
+              <div
+                class="about__v1wrap bg-common_bg bg-center bg-no-repeat bg-cover rounded-[10px] overflow-hidden sm:p-[60px] py-[30px] px-[10px]"
+              >
+                <div
+                  class="grid lg:grid-cols-[41%_auto] gap-6 lg:items-start items-center"
+                >
+                  <div>
+                    <div class="about__onethumb">
+                      <img
+                        src="./assets/img/about/personal-infothumb.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="about__onecontent lg:pl-10 pl-0">
+                      <h2 class="text-[42px] font-semibold text-clr_white mb-5">
+                        Experience
+                      </h2>
+                      <p class="text-lg text-clr_pra mb-0">
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor
+                        sit consectetur, aliquam quaerats voluptatem. Ut enim ad
+                        minima veniam, exercitationem laboriosam, nisi ut
+                        aliquid ex ea autem velit esse quam nihil
+                      </p>
+                      <div class="exprience__box lg:mt-[30px] mt-5">
+                        <div
+                          class="exri__item flex items-center justify-between border-t border-t-clr_cusborder py-6 duration-500 last:border-y last:border-b-clr_cusborder hover:border-clr_hover"
+                        >
+                          <span
+                            class="md:text-lg text-base font-medium text-clr_base"
+                          >
+                            In 2011
+                          </span>
+                          <div class="expri__cont">
+                            <h4
+                              class="mb-[15px] text-white font-semibold md:text-2xl text-lg leading-[130px]"
+                            >
+                              Software Engineer
+                            </h4>
+                            <p
+                              class="md:text-lg text-base text-clr_pra d-block"
+                            >
+                              UI Head & Manager
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="exri__item flex items-center justify-between border-t border-t-clr_cusborder py-6 duration-500 last:border-y last:border-b-clr_cusborder hover:border-clr_hover"
+                        >
+                          <span
+                            class="md:text-lg text-base font-medium text-clr_base"
+                          >
+                            In 2016
+                          </span>
+                          <div class="expri__cont">
+                            <h4
+                              class="mb-[15px] text-white font-semibold md:text-2xl text-lg leading-[130px]"
+                            >
+                              Product Designer
+                            </h4>
+                            <p
+                              class="md:text-lg text-base text-clr_pra d-block"
+                            >
+                              Head of Department
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="exri__item flex items-center justify-between border-t border-t-clr_cusborder py-6 duration-500 last:border-y last:border-b-clr_cusborder hover:border-clr_hover"
+                        >
+                          <span
+                            class="md:text-lg text-base font-medium text-clr_base"
+                          >
+                            In 2023
+                          </span>
+                          <div class="expri__cont">
+                            <h4
+                              class="mb-[15px] text-white font-semibold md:text-2xl text-lg leading-[130px]"
+                            >
+                              Senior UI Designer
+                            </h4>
+                            <p
+                              class="md:text-lg text-base text-clr_pra d-block"
+                            >
+                              Fiverr.com
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- Experience Info -->
+
+            <!-- ---------- Education Info -->
+            <div
+              data="education"
+              class="tabitem w-full duration-700 top-0 absolute translate-y-20 -z-10 opacity-0"
+            >
+              <div
+                class="about__v1wrap bg-common_bg bg-center bg-no-repeat bg-cover rounded-[10px] overflow-hidden sm:p-[60px] py-[30px] px-[10px]"
+              >
+                <div
+                  class="grid lg:grid-cols-[41%_auto] gap-6 lg:items-start items-center"
+                >
+                  <div>
+                    <div class="about__onethumb">
+                      <img
+                        src="./assets/img/about/personal-infothumb.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="about__onecontent lg:pl-10 pl-0">
+                      <h2 class="text-[42px] font-semibold text-clr_white mb-5">
+                        Education
+                      </h2>
+                      <p class="text-lg text-clr_pra mb-0">
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor
+                        sit consectetur, aliquam quaerats voluptatem. Ut enim ad
+                        minima veniam, exercitationem laboriosam, nisi ut
+                        aliquid ex ea autem velit esse quam nihil
+                      </p>
+                      <div class="exprience__box lg:mt-[30px] mt-5">
+                        <div
+                          class="exri__item flex items-center justify-between border-t border-t-clr_cusborder py-6 duration-500 last:border-y last:border-b-clr_cusborder hover:border-clr_hover"
+                        >
+                          <span
+                            class="md:text-lg text-base font-medium text-clr_base"
+                          >
+                            2011 - 2013
+                          </span>
+                          <div class="expri__cont">
+                            <h4
+                              class="mb-[15px] text-white font-semibold md:text-2xl text-lg leading-[130px]"
+                            >
+                              Programming Course
+                            </h4>
+                            <p
+                              class="md:text-lg text-base text-clr_pra d-block"
+                            >
+                              New York University
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="exri__item flex items-center justify-between border-t border-t-clr_cusborder py-6 duration-500 last:border-y last:border-b-clr_cusborder hover:border-clr_hover"
+                        >
+                          <span
+                            class="md:text-lg text-base font-medium text-clr_base"
+                          >
+                            2013 - 2016
+                          </span>
+                          <div class="expri__cont">
+                            <h4
+                              class="mb-[15px] text-white font-semibold md:text-2xl text-lg leading-[130px]"
+                            >
+                              University Of Design
+                            </h4>
+                            <p
+                              class="md:text-lg text-base text-clr_pra d-block"
+                            >
+                              Kingston, United States
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="exri__item flex items-center justify-between border-t border-t-clr_cusborder py-6 duration-500 last:border-y last:border-b-clr_cusborder hover:border-clr_hover"
+                        >
+                          <span
+                            class="md:text-lg text-base font-medium text-clr_base"
+                          >
+                            2016 - 2018
+                          </span>
+                          <div class="expri__cont">
+                            <h4
+                              class="mb-[15px] text-white font-semibold md:text-2xl text-lg leading-[130px]"
+                            >
+                              Web Design Course
+                            </h4>
+                            <p
+                              class="md:text-lg text-base text-clr_pra d-block"
+                            >
+                              New York University
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- Education Info -->
+
+            <!-- ---------- Skill Info -->
+            <div
+              data="skills"
+              class="tabitem w-full duration-700 top-0 absolute translate-y-20 -z-10 opacity-0"
+            >
+              <div
+                class="about__v1wrap bg-common_bg bg-center bg-no-repeat bg-cover rounded-[10px] overflow-hidden sm:p-[60px] py-[30px] px-[10px]"
+              >
+                <div
+                  class="grid lg:grid-cols-[41%_auto] gap-6 lg:items-start items-center"
+                >
+                  <div>
+                    <div class="about__onethumb">
+                      <img
+                        src="assets/img/about/personal-infothumb.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="about__onecontent">
+                      <h2 class="text-[42px] font-semibold text-clr_white mb-5">
+                        My Skills
+                      </h2>
+                      <p class="text-lg text-clr_pra mb-0">
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor
+                        sit consectetur, aliquam quaerats voluptatem. Ut enim ad
+                        minima veniam, exercitationem laboriosam, nisi ut
+                        aliquid ex ea autem velit esse quam nihil
+                      </p>
+                      <div class="mt-10">
+                        <div
+                          class="grid xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-2 grid-cols-1 justify-between gap-6"
+                        >
+                          <div
+                            class="rounded-[10px] bg-[#1D1D1D] p-[35px] border border-[#1D1D1D] duration-500 hover:border-clr_base"
+                          >
+                            <div
+                              class="abox myskill__item flex items-center gap-6"
+                            >
+                              <div class="">
+                                <img
+                                  src="assets/img/about/html.png"
+                                  alt="img"
+                                />
+                              </div>
+                              <div class="mys">
+                                <span
+                                  class="ptext md:text-lg text-base lg:mb-[15px] mb-[10px] block text-clr_pra"
+                                  >HTML</span
+                                >
+                                <h1
+                                  class="font-semibold text-5xl text-clr_white"
+                                >
+                                  85%
+                                </h1>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="rounded-[10px] bg-[#1D1D1D] p-[35px] border border-[#1D1D1D] duration-500 hover:border-clr_base"
+                          >
+                            <div
+                              class="abox myskill__item flex items-center gap-6"
+                            >
+                              <div class="">
+                                <img
+                                  src="assets/img/about/figma.png"
+                                  alt="img"
+                                />
+                              </div>
+                              <div class="mys">
+                                <span
+                                  class="ptext md:text-lg text-base lg:mb-[15px] mb-[10px] block text-clr_pra"
+                                  >Figma</span
+                                >
+                                <h1
+                                  class="font-semibold text-5xl text-clr_white"
+                                >
+                                  90%
+                                </h1>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="rounded-[10px] bg-[#1D1D1D] p-[35px] border border-[#1D1D1D] duration-500 hover:border-clr_base"
+                          >
+                            <div
+                              class="abox myskill__item flex items-center gap-6"
+                            >
+                              <div class="">
+                                <img
+                                  src="assets/img/about/word.png"
+                                  alt="img"
+                                />
+                              </div>
+                              <div class="mys">
+                                <span
+                                  class="ptext md:text-lg text-base lg:mb-[15px] mb-[10px] block text-clr_pra"
+                                  >Wordpress</span
+                                >
+                                <h1
+                                  class="font-semibold text-5xl text-clr_white"
+                                >
+                                  95%
+                                </h1>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="rounded-[10px] bg-[#1D1D1D] p-[35px] border border-[#1D1D1D] duration-500 hover:border-clr_base"
+                          >
+                            <div
+                              class="abox myskill__item flex items-center gap-6"
+                            >
+                              <div class="">
+                                <img
+                                  src="assets/img/about/boot.png"
+                                  alt="img"
+                                />
+                              </div>
+                              <div class="mys">
+                                <span
+                                  class="ptext md:text-lg text-base lg:mb-[15px] mb-[10px] block text-clr_pra"
+                                  >Bootstrap</span
+                                >
+                                <h1
+                                  class="font-semibold text-5xl text-clr_white"
+                                >
+                                  97%
+                                </h1>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- Skill Info -->
           </div>
-          <div class="col-md-4 px-[15px] hidden lg:block valign">
-            <div class="social text-center w-full">
-              <a href="#0"
-                ><i
-                  class="fab fa-behance w-10 h-10 leading-10 text-center text-xs border border-white border-opacity-20 rounded-full mx-0.5 transition-all duration-400 ease-in-out hover:bg-[#fff] hover:text-[#1d1d1d]"
-                ></i
-              ></a>
-              <a href="#0"
-                ><i
-                  class="fab fa-github w-10 h-10 leading-10 text-center text-xs border border-white border-opacity-20 rounded-full mx-0.5 transition-all duration-400 ease-in-out hover:bg-[#fff] hover:text-[#1d1d1d]"
-                ></i
-              ></a>
-              <a href="#0"
-                ><i
-                  class="fab fa-linkedin-in w-10 h-10 leading-10 text-center text-xs border border-white border-opacity-20 rounded-full mx-0.5 transition-all duration-400 ease-in-out hover:bg-[#fff] hover:text-[#1d1d1d]"
-                ></i
-              ></a>
-              <a href="#0"
-                ><i
-                  class="fab fa-dribbble w-10 h-10 leading-10 text-center text-xs border border-white border-opacity-20 rounded-full mx-0.5 transition-all duration-400 ease-in-out hover:bg-[#fff] hover:text-[#1d1d1d]"
-                ></i
-              ></a>
+        </div>
+      </div>
+    </section>
+    <!-- ---------- Marquee 2 -->
+    <div
+      class="relative marquee-wrapper text-slider bg-clr_base h-[90px] overflow-hidden"
+    >
+      <div class="slide-track slide-track2">
+        <div class="slide">
+          <img src="./assets/img/banner/ts5.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts6.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts7.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts8.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts5.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts6.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts7.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner/ts8.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- ---------- Marquee 2 -->
+
+    <!-- ----------- Awards start -->
+    <section
+      class="awoard__section bg-common_bg bg-center bg-no-repeat bg-cover rounded-[10px] overflow-hidden xxl:py-[120px] xl:py-[100px] py-[60px]"
+    >
+      <div
+        class="xl:max-w-[1350px] lg:max-w-[960px] md:max-w-2xl sm:max-w-xl xl mx-auto px-3"
+      >
+        <div
+          class="award__wraper table-responsive"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <table class="table w-full">
+            <tbody>
+              <tr>
+                <td
+                  class="bg-transparent lg:text-xl md:text-lg text-base font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  <span
+                    class="table__title md:text-[42px] sm:text-[28px] text-lg"
+                    >Our Awards</span
+                  >
+                </td>
+                <td
+                  class="cusnoe bg-transparent lg:text-xl md:text-lg text-base font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                ></td>
+                <td
+                  class="text-end bg-transparent lg:text-xl md:text-lg text-base font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  <a
+                    href=""
+                    class="table__view md:text-lg sm:text-base text-sm flex justify-end items-center text-clr_base gap-2"
+                  >
+                    <span class="whitespace-nowrap">View My Work</span>
+                    <i class="bi-arrow-right"> </i>
+                  </a>
+                </td>
+              </tr>
+
+              <tr>
+                <td
+                  class="bg-transparent lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  Site Of The Day
+                </td>
+                <td
+                  class="bg-transparent lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  Css & Animation
+                </td>
+                <td
+                  class="text-end bg-transparent lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  2018
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="bg-transparent lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  Best Business Model
+                </td>
+                <td
+                  class="bg-transparent lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  New Strategy
+                </td>
+                <td
+                  class="text-end bg-transparent lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  2019
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="bg-transparent lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  Motion Graphic
+                </td>
+                <td
+                  class="bg-transparent lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  3D & Visual Effect
+                </td>
+                <td
+                  class="text-end bg-transparent lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  2020
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="bg-transparent lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  Video Design
+                </td>
+                <td
+                  class="bg-transparent lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  Css & Animation
+                </td>
+                <td
+                  class="text-end bg-transparent lg:text-xl md:text-lg sm:text-base text-sm font-medium text-white py-[30px] border-b border-b-[#2c3030]"
+                >
+                  2022
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- ----------- Awards end -->
+
+    <!-- ----------- Projects Start -->
+    <section class="pt_120 pb_120" id="projects">
+      <div
+        class="xl:max-w-[1350px] lg:max-w-[960px] md:max-w-2xl sm:max-w-xl xl mx-auto px-3"
+      >
+        <!-- heading -->
+        <div
+          class="text-center max-w-[920px] mx-auto md:mb-[60px] sm:mb-[50px] mb-[45px]"
+        >
+          <p
+            class="text-2xl font-caveat text-clr_base relative flex justify-center items-center sm:gap-6 gap-[14px] mx-auto mb-[30px]"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <span class="sm:w-20 w-[50px] h-[1px] bg-clr_base"></span>
+            Complete Project
+            <span class="sm:w-20 w-[50px] h-[1px] bg-clr_base"></span>
+          </p>
+          <h2
+            class="font-medium lg:text-6xl md:text-5xl sm:text-4xl text-[29px] text-white lg:leading-[120%] md:leading-tight leading-9"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            Look At My Portfolio And Give Me Your Feedback
+          </h2>
+        </div>
+        <!-- heading -->
+
+        <div
+          class="md:columns-2 col-span-1 xxl:gap-[58px] lg:gap-12 md:gap-[30px]"
+        >
+          <!-- card 1 -->
+          <div
+            class="project__item overflow-hidden group xl:mb-[60px] lg:mb-[50px] mb-[30px]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a
+              href="assets/img/project/pro1.png"
+              class="imgc overflow-hidden lg:mb-[30px] mb-[20px] block w-full cursor-pointer"
+            >
+              <img
+                src="assets/img/project/pro1.png"
+                alt="img"
+                class="w-full overflow-hidden duration-500 rounded-[10px] group-hover:scale-105"
+              />
+            </a>
+            <div class="content flex items-center justify-between gap-1">
+              <a href="./protfolio.html" class="left__cont">
+                <span
+                  class="text-clr_base xl:mb-4 mb-2 block uppercase xl:text-lg text-base"
+                >
+                  PRODUCT DESIGN
+                </span>
+                <h3
+                  class="xl:text-[30px] sm:text-2xl text-xl font-semibold text-white"
+                >
+                  Brand Identity & Motion Design
+                </h3>
+              </a>
+              <a
+                href="assets/img/project/pro1.png"
+                class="imgc h-[45px] w-[45px] sm:w-[60px] sm:h-[60px] rounded-md bg-[#1D1D1D] flex justify-center items-center duration-500 group-hover:bg-clr_base cursor-pointer"
+              >
+                <i
+                  class="bi-arrow-up-right duration-500 group-hover:text-clr_title text-lg sm:text-xl text-white"
+                ></i>
+              </a>
             </div>
           </div>
-          <div class="col-md-4 px-[15px] hidden lg:block valign">
-            <div class="w-full info">
-              <div class="flex justify-end">
-                <a href="mailto:abc@example.com">
-                  <span class="sub-title fz-12 text-[12px] font-light uppercase tracking-widest">Gavi@website.com</span>
+          <!-- card 1 -->
+
+          <!-- card 2 -->
+          <div
+            class="overflow-hidden group xl:mb-[60px] lg:mb-[50px] mb-[30px]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a
+              href="assets/img/project/pro3.png"
+              class="imgc overflow-hidden lg:mb-[30px] mb-[20px] block w-full cursor-pointer"
+            >
+              <img
+                src="assets/img/project/pro3.png"
+                alt="img"
+                class="w-full overflow-hidden duration-500 rounded-[10px] group-hover:scale-105"
+              />
+            </a>
+
+            <div class="content flex items-center justify-between gap-1">
+              <a href="./protfolio.html" class="left__cont">
+                <span
+                  class="text-clr_base xl:mb-4 mb-2 block uppercase xl:text-lg text-base"
+                >
+                  UI/UX DESIGN
+                </span>
+                <h3
+                  class="xl:text-[30px] sm:text-2xl text-xl font-semibold text-white"
+                >
+                  Mobile Application Development
+                </h3>
+              </a>
+              <a
+                href="assets/img/project/pro3.png"
+                class="imgc h-[45px] w-[45px] sm:w-[60px] sm:h-[60px] rounded-md bg-[#1D1D1D] flex justify-center items-center duration-500 group-hover:bg-clr_base cursor-pointer"
+              >
+                <i
+                  class="bi-arrow-up-right duration-500 group-hover:text-clr_title text-lg sm:text-xl text-white"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <!-- card 2 -->
+
+          <!-- card 3 -->
+          <div
+            class="overflow-hidden group"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a
+              href="assets/img/project/pro5.png"
+              class="imgc overflow-hidden lg:mb-[30px] mb-[20px] block w-full cursor-pointer"
+            >
+              <img
+                src="assets/img/project/pro5.png"
+                alt="img"
+                class="w-full overflow-hidden duration-500 rounded-[10px] group-hover:scale-105"
+              />
+            </a>
+            <div class="content flex items-center justify-between gap-1">
+              <a href="./protfolio.html" class="left__cont">
+                <span
+                  class="text-clr_base xl:mb-4 mb-2 block uppercase xl:text-lg text-base"
+                >
+                  PRODUCT DESIGN
+                </span>
+                <h3
+                  class="xl:text-[30px] sm:text-2xl text-xl font-semibold text-white"
+                >
+                  Design & Branding Mokeup
+                </h3>
+              </a>
+              <a
+                href="assets/img/project/pro5.png"
+                class="imgc h-[45px] w-[45px] sm:w-[60px] sm:h-[60px] rounded-md bg-[#1D1D1D] flex justify-center items-center duration-500 group-hover:bg-clr_base cursor-pointer"
+              >
+                <i
+                  class="bi-arrow-up-right duration-500 group-hover:text-clr_title text-lg sm:text-xl text-white"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <!-- card 3 -->
+
+          <!-- card 4 -->
+          <div
+            class="project__item overflow-hidden group xl:mb-[60px] lg:mb-[50px] mb-[30px]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a
+              href="assets/img/project/pro2.png"
+              class="imgc overflow-hidden lg:mb-[30px] mb-[20px] block w-full cursor-pointer"
+            >
+              <img
+                src="assets/img/project/pro2.png"
+                alt="img"
+                class="w-full overflow-hidden duration-500 rounded-[10px] group-hover:scale-105"
+              />
+            </a>
+            <div class="content flex items-center justify-between gap-1">
+              <a href="./protfolio.html" class="left__cont">
+                <span
+                  class="text-clr_base xl:mb-4 mb-2 block uppercase xl:text-lg text-base"
+                >
+                  UI/UX DESIGN
+                </span>
+                <h3
+                  class="xl:text-[30px] sm:text-2xl text-xl font-semibold text-white"
+                >
+                  Mobile Application Development
+                </h3>
+              </a>
+              <a
+                href="assets/img/project/pro2.png"
+                class="imgc h-[45px] w-[45px] sm:w-[60px] sm:h-[60px] rounded-md bg-[#1D1D1D] flex justify-center items-center duration-500 group-hover:bg-clr_base cursor-pointer"
+              >
+                <i
+                  class="bi-arrow-up-right duration-500 group-hover:text-clr_title text-lg sm:text-xl text-white"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <!-- card 4 -->
+
+          <!-- card 5 -->
+          <div
+            class="project__item overflow-hidden group xl:mb-[60px] lg:mb-[50px] mb-[30px]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a
+              href="assets/img/project/pro4.png"
+              class="imgc overflow-hidden lg:mb-[30px] mb-[20px] block w-full cursor-pointer"
+            >
+              <img
+                src="assets/img/project/pro4.png"
+                alt="img"
+                class="w-full overflow-hidden duration-500 rounded-[10px] group-hover:scale-105"
+              />
+            </a>
+            <div class="content flex items-center justify-between gap-1">
+              <a href="./protfolio.html" class="left__cont">
+                <span
+                  class="text-clr_base xl:mb-4 mb-2 block uppercase xl:text-lg text-base"
+                >
+                  UI/UX DESIGN
+                </span>
+                <h3
+                  class="xl:text-[30px] sm:text-2xl text-xl font-semibold text-white"
+                >
+                  Mobile Application Development
+                </h3>
+              </a>
+              <a
+                href="assets/img/project/pro4.png"
+                class="imgc h-[45px] w-[45px] sm:w-[60px] sm:h-[60px] rounded-md bg-[#1D1D1D] flex justify-center items-center duration-500 group-hover:bg-clr_base cursor-pointer"
+              >
+                <i
+                  class="bi-arrow-up-right duration-500 group-hover:text-clr_title text-lg sm:text-xl text-white"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <!-- card 5 -->
+
+          <!-- card 6 -->
+          <div
+            class="project__item overflow-hidden group"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a
+              href="assets/img/project/pro6.png"
+              class="imgc overflow-hidden lg:mb-[30px] mb-[20px] block w-full cursor-pointer"
+            >
+              <img
+                src="assets/img/project/pro6.png"
+                alt="img"
+                class="w-full overflow-hidden duration-500 rounded-[10px] group-hover:scale-105"
+              />
+            </a>
+            <div class="content flex items-center justify-between gap-1">
+              <a href="./protfolio.html" class="left__cont">
+                <span
+                  class="text-clr_base xl:mb-4 mb-2 block uppercase xl:text-lg text-base"
+                >
+                  UI/UX DESIGN
+                </span>
+                <h3
+                  class="xl:text-[30px] sm:text-2xl text-xl font-semibold text-white"
+                >
+                  Mobile Application Development
+                </h3>
+              </a>
+              <a
+                href="assets/img/project/pro4.png"
+                class="imgc h-[45px] w-[45px] sm:w-[60px] sm:h-[60px] rounded-md bg-[#1D1D1D] flex justify-center items-center duration-500 group-hover:bg-clr_base cursor-pointer"
+              >
+                <i
+                  class="bi-arrow-up-right duration-500 group-hover:text-clr_title text-lg sm:text-xl text-white"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <!-- card 6 -->
+        </div>
+
+        <!-- -------- Cricle box -->
+        <div class="mt-[100px] flex justify-center">
+          <a
+            href=""
+            class="md:w-52 md:h-52 w-32 h-32 bg-clr_base rounded-full flex justify-center items-center text-center relative before:w-full before:h-full before:rounded-full before:border before:border-clr_base before:content-[''] before:absolute before:top-[10px] before:-left-[7px] before:duration-500 hover:before:-top-[10px]"
+            data-aos="zoom-out-down"
+            data-aos-duration="2000"
+          >
+            <span class="relative z-10">
+              <i
+                class="bi-arrow-right mb-[1px] md:text-[28px] text-base text-center flex justify-center text-clr_title transition-all"
+              >
+              </i>
+              <span
+                class="text-[#282828] md:text-lg text-sm font-medium leading-[30px] capitalize transition-all"
+              >
+                Click More Work
+              </span>
+            </span>
+          </a>
+        </div>
+        <!-- -------- Cricle box -->
+      </div>
+    </section>
+    <!-- ----------- Projects End -->
+
+    <!-- ----------- Metting start -->
+    <section
+      class="bg-common_bg bg-center bg-no-repeat bg-cover rounded-[10px] overflow-hidden pt_120 pb_120"
+    >
+      <div
+        class="xl:max-w-[1350px] lg:max-w-[960px] md:max-w-2xl sm:max-w-xl xl mx-auto px-3"
+      >
+        <div class="grid lg:grid-cols-[58%_auto] gap-20 items-center">
+          <div>
+            <!-- ---------- Heading -->
+            <div class="pb-[50px]">
+              <span
+                class="text-2xl font-caveat text-clr_base relative flex items-center sm:gap-6 gap-[14px] mx-auto mb-[30px]"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <span class="sm:w-20 w-[50px] h-[1px] bg-clr_base"></span>
+                Need a Project?
+              </span>
+              <h2
+                class="font-medium lg:text-6xl md:text-5xl sm:text-4xl text-[29px] text-white max-w-[620px]"
+                data-aos="fade-down"
+                data-aos-duration="1600"
+              >
+                Let's Work Together. Fixed A Meeting
+              </h2>
+            </div>
+            <!-- ---------- Heading -->
+            <!-- ---------- Metting system -->
+            <div>
+              <div
+                class="border-b border-b-[rgb(39,38,38)] hover:border-b-clr_base duration-500 transition-all"
+              ></div>
+              <div
+                class="hover:border-b hover:border-b-clr_base flex ga-5 items-center md:gap-5 gap-4 duration-500 transition-all border-b border-b-[rgb(38_37_37)] lg:pb-[30px] pb-5 lg:pt-[30px] pt-[20px]"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <span
+                  class="w-[60px] h-[60px] rounded-full bg-clr_base flex justify-center items-center"
+                >
+                  <i class="bi-envelope text-[26px] text-clr_title"></i>
+                </span>
+                <span class="">
+                  <span class="text-clr_pra md:text-lg text-base mb-1 block">
+                    Email
+                  </span>
+                  <a
+                    href=""
+                    class="text-white md:text-xl text-base font-medium"
+                  >
+                    davidmatias3</a
+                  >
+                </span>
+              </div>
+              <div
+                class="hover:border-b hover:border-b-clr_base flex ga-5 items-center md:gap-5 gap-4 duration-500 border-b border-b-[rgb(38_37_37)] lg:pb-[30px] pb-5 lg:pt-[30px] pt-[20px]"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span
+                  class="w-[60px] h-[60px] rounded-full bg-clr_base flex justify-center items-center"
+                >
+                  <i class="bi-geo-alt text-[26px] text-clr_title"></i>
+                </span>
+                <span class="">
+                  <span class="text-clr_pra md:text-lg text-base mb-1 block">
+                    Location
+                  </span>
+                  <a
+                    href=""
+                    class="text-white md:text-xl text-base font-medium"
+                  >
+                    Victoria Street London, England
+                  </a>
+                </span>
+              </div>
+            </div>
+            <!-- ---------- Metting system -->
+          </div>
+          <!-- --------- Right side / image -->
+          <div>
+            <div data-aos="zoom-in" data-aos-duration="2000">
+              <img src="./assets/img/project/project-need.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------- Metting End -->
+
+    <!-- ----------- Services Start -->
+    <section id="services" class="pt_120 pb_120">
+      <div
+        class="xl:max-w-[1350px] lg:max-w-[960px] md:max-w-2xl sm:max-w-xl xl mx-auto px-3"
+      >
+        <!-- --------- Heading -->
+        <div
+          class="text-center max-w-[920px] mx-auto md:mb-[60px] sm:mb-[50px] mb-[45px]"
+        >
+          <p
+            class="text-2xl font-caveat text-clr_base relative flex justify-center items-center sm:gap-6 gap-[14px] mx-auto mb-[30px]"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <span class="sm:w-20 w-[50px] h-[1px] bg-clr_base"></span>
+            Services That i Provide
+            <span class="sm:w-20 w-[50px] h-[1px] bg-clr_base"></span>
+          </p>
+          <h2
+            class="font-medium lg:text-6xl md:text-5xl sm:text-4xl text-[29px] text-white lg:leading-[120%] md:leading-tight leading-9"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            My Special Service For Your Business Development
+          </h2>
+        </div>
+        <!-- --------- Heading -->
+
+        <div>
+          <!-- card 1 -->
+          <div
+            class="lg:pb-10 pb-[30px] lg:pt-10 pt-[30px] flex justify-between items-center sm:gap-[14px] gap-5 sm:flex-nowrap flex-wrap border-b duration-500 border-b-[rgb(38_37_37)] first:border-t first:border-t-[rgb(38_37_37)] hover:border-b-clr_base hover:first:border-t-clr_base group"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div
+              class="w-[1062px] flex items-center justify-between md:flex-nowrap flex-wrap md:gap-[14px] gap-2"
+            >
+              <div class="flex lg:gap-[60px] gap-[16px]">
+                <span class="text-xl text-white"> 01 </span>
+                <div class="cont">
+                  <h5
+                    class="text-base lg:text-xl font-semibold text-white mb-2"
+                  >
+                    Designer
+                  </h5>
+                  <h2
+                    class="text-[26px] xl:text-[40px] lg:text-3xl font-semibold lg:leading-[120%]"
+                  >
+                    <a
+                      href="./serviceDetails.html"
+                      class="text-white duration-500"
+                    >
+                      Illustration Design
+                    </a>
+                  </h2>
+                </div>
+              </div>
+              <p class="text-clr_pra text-base lg:w-[400px] w-[300px]">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. sunt in culpa qui
+                officia deserunt mollit
+              </p>
+            </div>
+
+            <a
+              href="./s"
+              class="imgc h-[45px] w-[45px] sm:w-[60px] sm:h-[60px] rounded-md bg-[#1D1D1D] flex justify-center items-center duration-500 group-hover:bg-clr_base cursor-pointer"
+            >
+              <i
+                class="bi-arrow-up-right duration-500 group-hover:text-clr_title text-lg sm:text-xl text-white"
+              ></i>
+            </a>
+          </div>
+          <!-- card 1 -->
+
+          <!-- card 2 -->
+          <div
+            class="lg:pb-10 pb-[30px] lg:pt-10 pt-[30px] flex justify-between items-center sm:gap-[14px] gap-5 sm:flex-nowrap flex-wrap border-b duration-500 border-b-[rgb(38_37_37)] first:border-t first:border-t-[rgb(38_37_37)] hover:border-b-clr_base hover:first:border-t-clr_base group"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div
+              class="w-[1062px] flex items-center justify-between md:flex-nowrap flex-wrap md:gap-[14px] gap-2"
+            >
+              <div class="flex lg:gap-[60px] gap-[16px]">
+                <span class="text-xl text-white"> 02 </span>
+                <div class="cont">
+                  <h5
+                    class="text-base lg:text-xl font-semibold text-white mb-2"
+                  >
+                    Branding
+                  </h5>
+                  <h2
+                    class="text-[26px] xl:text-[40px] lg:text-3xl font-semibold lg:leading-[120%]"
+                  >
+                    <a
+                      href="./serviceDetails.html"
+                      class="text-white duration-500"
+                    >
+                      Business Branding
+                    </a>
+                  </h2>
+                </div>
+              </div>
+              <p class="text-clr_pra text-base lg:w-[400px] w-[300px]">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. sunt in culpa qui
+                officia deserunt mollit
+              </p>
+            </div>
+
+            <a
+              href="./serviceDetails.html"
+              class="imgc h-[45px] w-[45px] sm:w-[60px] sm:h-[60px] rounded-md bg-[#1D1D1D] flex justify-center items-center duration-500 group-hover:bg-clr_base cursor-pointer"
+            >
+              <i
+                class="bi-arrow-up-right duration-500 group-hover:text-clr_title text-lg sm:text-xl text-white"
+              ></i>
+            </a>
+          </div>
+          <!-- card 2 -->
+
+          <!-- card 3 -->
+          <div
+            class="lg:pb-10 pb-[30px] lg:pt-10 pt-[30px] flex justify-between items-center sm:gap-[14px] gap-5 sm:flex-nowrap flex-wrap border-b duration-500 border-b-[rgb(38_37_37)] first:border-t first:border-t-[rgb(38_37_37)] hover:border-b-clr_base hover:first:border-t-clr_base group"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div
+              class="w-[1062px] flex items-center justify-between md:flex-nowrap flex-wrap md:gap-[14px] gap-2"
+            >
+              <div class="flex lg:gap-[60px] gap-[16px]">
+                <span class="text-xl text-white"> 03 </span>
+                <div class="cont">
+                  <h5
+                    class="text-base lg:text-xl font-semibold text-white mb-2"
+                  >
+                    UI/UX Design
+                  </h5>
+                  <h2
+                    class="text-[26px] xl:text-[40px] lg:text-3xl font-semibold lg:leading-[120%]"
+                  >
+                    <a
+                      href="./serviceDetails.html"
+                      class="text-white duration-500"
+                    >
+                      Web UI/UX Design
+                    </a>
+                  </h2>
+                </div>
+              </div>
+              <p class="text-clr_pra text-base lg:w-[400px] w-[300px]">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. sunt in culpa qui
+                officia deserunt mollit
+              </p>
+            </div>
+
+            <a
+              href="./serviceDetails.html"
+              class="imgc h-[45px] w-[45px] sm:w-[60px] sm:h-[60px] rounded-md bg-[#1D1D1D] flex justify-center items-center duration-500 group-hover:bg-clr_base cursor-pointer"
+            >
+              <i
+                class="bi-arrow-up-right duration-500 group-hover:text-clr_title text-lg sm:text-xl text-white"
+              ></i>
+            </a>
+          </div>
+          <!-- card 3 -->
+
+          <!-- card 4 -->
+          <div
+            class="lg:pb-10 pb-[30px] lg:pt-10 pt-[30px] flex justify-between items-center sm:gap-[14px] gap-5 sm:flex-nowrap flex-wrap border-b duration-500 border-b-[rgb(38_37_37)] first:border-t first:border-t-[rgb(38_37_37)] hover:border-b-clr_base hover:first:border-t-clr_base group"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div
+              class="w-[1062px] flex items-center justify-between md:flex-nowrap flex-wrap md:gap-[14px] gap-2"
+            >
+              <div class="flex lg:gap-[60px] gap-[16px]">
+                <span class="text-xl text-white"> 04 </span>
+                <div class="cont">
+                  <h5
+                    class="text-base lg:text-xl font-semibold text-white mb-2"
+                  >
+                    Web Design
+                  </h5>
+                  <h2
+                    class="text-[26px] xl:text-[40px] lg:text-3xl font-semibold lg:leading-[120%]"
+                  >
+                    <a
+                      href="./serviceDetails.html"
+                      class="text-white duration-500"
+                    >
+                      Application Design
+                    </a>
+                  </h2>
+                </div>
+              </div>
+              <p class="text-clr_pra text-base lg:w-[400px] w-[300px]">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. sunt in culpa qui
+                officia deserunt mollit
+              </p>
+            </div>
+
+            <a
+              href="./serviceDetails.html"
+              class="imgc h-[45px] w-[45px] sm:w-[60px] sm:h-[60px] rounded-md bg-[#1D1D1D] flex justify-center items-center duration-500 group-hover:bg-clr_base cursor-pointer"
+            >
+              <i
+                class="bi-arrow-up-right duration-500 group-hover:text-clr_title text-lg sm:text-xl text-white"
+              ></i>
+            </a>
+          </div>
+          <!-- card 4 -->
+
+          <!-- card 5 -->
+          <div
+            class="lg:pb-10 pb-[30px] lg:pt-10 pt-[30px] flex justify-between items-center sm:gap-[14px] gap-5 sm:flex-nowrap flex-wrap border-b duration-500 border-b-[rgb(38_37_37)] first:border-t first:border-t-[rgb(38_37_37)] hover:border-b-clr_base hover:first:border-t-clr_base group"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div
+              class="w-[1062px] flex items-center justify-between md:flex-nowrap flex-wrap md:gap-[14px] gap-2"
+            >
+              <div class="flex lg:gap-[60px] gap-[16px]">
+                <span class="text-xl text-white"> 05 </span>
+                <div class="cont">
+                  <h5
+                    class="text-base lg:text-xl font-semibold text-white mb-2"
+                  >
+                    SEO Analytics
+                  </h5>
+                  <h2
+                    class="text-[26px] xl:text-[40px] lg:text-3xl font-semibold lg:leading-[120%]"
+                  >
+                    <a
+                      href="./serviceDetails.html"
+                      class="text-white duration-500"
+                    >
+                      Digital Marketing
+                    </a>
+                  </h2>
+                </div>
+              </div>
+              <p class="text-clr_pra text-base lg:w-[400px] w-[300px]">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. sunt in culpa qui
+                officia deserunt mollit
+              </p>
+            </div>
+
+            <a
+              href="./serviceDetails.html"
+              class="imgc h-[45px] w-[45px] sm:w-[60px] sm:h-[60px] rounded-md bg-[#1D1D1D] flex justify-center items-center duration-500 group-hover:bg-clr_base cursor-pointer"
+            >
+              <i
+                class="bi-arrow-up-right duration-500 group-hover:text-clr_title text-lg sm:text-xl text-white"
+              ></i>
+            </a>
+          </div>
+          <!-- card 5 -->
+        </div>
+      </div>
+    </section>
+    <!-- ----------- Services End -->
+
+    <!-- ----------- Work Process start -->
+    <section
+      class="bg-common_bg bg-center bg-no-repeat bg-cover rounded-[10px] overflow-hidden pt_120 pb_120"
+    >
+      <div
+        class="xl:max-w-[1350px] lg:max-w-[960px] md:max-w-2xl sm:max-w-xl xl mx-auto px-3"
+      >
+        <!-- --------- Heading -->
+        <div
+          class="text-center max-w-[920px] mx-auto md:mb-[60px] sm:mb-[50px] mb-[45px]"
+        >
+          <p
+            class="text-2xl font-caveat text-clr_base relative flex justify-center items-center sm:gap-6 gap-[14px] mx-auto mb-[30px]"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <span class="sm:w-20 w-[50px] h-[1px] bg-clr_base"></span>
+            Working Process
+            <span class="sm:w-20 w-[50px] h-[1px] bg-clr_base"></span>
+          </p>
+          <h2
+            class="font-medium lg:text-6xl md:text-5xl sm:text-4xl text-[29px] text-white lg:leading-[120%] md:leading-tight leading-9"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            Your Dream Website In Just Few Steps
+          </h2>
+        </div>
+        <!-- --------- Heading -->
+
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7">
+          <div data-aos="flip-up" data-aos-duration="500">
+            <div
+              class="overflow-hidden duration-500 border border-clr_cusborder rounded-[10px] p-[30px] relative after:absolute after:w-[50px] after:h-[50px] after:bottom-0 after:right-0 after:content-[''] after:bg-[#121212] after:rounded-tl-[100px] after:rounded-tr-[20px] after:duration-500 hover:border-clr_base hover:after:bg-clr_base"
+            >
+              <h2
+                class="text-white lg:mb-6 mb-4 capitalize sm:text-[40px] text-3xl leading-[120%] font-semibold"
+              >
+                Concept
+              </h2>
+              <p class="lg:mb-[30px] mb-5 text-clr_pra text-lg">
+                Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
+                fugit
+              </p>
+              <ul>
+                <li
+                  class="relative flex items-center gap-[10px] text-[#999999] pl-5 mb-2 last:mb-0"
+                >
+                  <span class="w-[9px] h-[9px] bg-clr_base rounded-full"></span>
+                  <p class="text-sm">Reviewing any existing branding</p>
+                </li>
+                <li
+                  class="relative flex items-center gap-[10px] text-[#999999] pl-5 mb-2 last:mb-0"
+                >
+                  <span class="w-[9px] h-[9px] bg-clr_base rounded-full"></span>
+                  <p class="text-sm">
+                    Target audience and competitors research
+                  </p>
+                </li>
+                <li
+                  class="relative flex items-center gap-[10px] text-[#999999] pl-5 mb-2 last:mb-0"
+                >
+                  <span class="w-[9px] h-[9px] bg-clr_base rounded-full"></span>
+                  <p class="text-sm">Developing a strategy</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="500">
+            <div
+              class="overflow-hidden duration-500 border border-clr_cusborder rounded-[10px] p-[30px] relative after:absolute after:w-[50px] after:h-[50px] after:bottom-0 after:right-0 after:content-[''] after:bg-[#121212] after:rounded-tl-[100px] after:rounded-tr-[20px] after:duration-500 hover:border-clr_base hover:after:bg-clr_base"
+            >
+              <h2
+                class="text-white lg:mb-6 mb-4 capitalize sm:text-[40px] text-3xl leading-[120%] font-semibold"
+              >
+                Design
+              </h2>
+              <p class="lg:mb-[30px] mb-5 text-clr_pra text-lg">
+                Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
+                fugit
+              </p>
+              <ul>
+                <li
+                  class="relative flex items-center gap-[10px] text-[#999999] pl-5 mb-2 last:mb-0"
+                >
+                  <span class="w-[9px] h-[9px] bg-clr_base rounded-full"></span>
+                  <p class="text-sm">Developing wireframes and mockup</p>
+                </li>
+                <li
+                  class="relative flex items-center gap-[10px] text-[#999999] pl-5 mb-2 last:mb-0"
+                >
+                  <span class="w-[9px] h-[9px] bg-clr_base rounded-full"></span>
+                  <p class="text-sm">Choosing typography, color palettes,</p>
+                </li>
+                <li
+                  class="relative flex items-center gap-[10px] text-[#999999] pl-5 mb-2 last:mb-0"
+                >
+                  <span class="w-[9px] h-[9px] bg-clr_base rounded-full"></span>
+                  <p class="text-sm">Refining the design</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="500">
+            <div
+              class="overflow-hidden duration-500 border border-clr_cusborder rounded-[10px] p-[30px] relative after:absolute after:w-[50px] after:h-[50px] after:bottom-0 after:right-0 after:content-[''] after:bg-[#121212] after:rounded-tl-[100px] after:rounded-tr-[20px] after:duration-500 hover:border-clr_base hover:after:bg-clr_base"
+            >
+              <h2
+                class="text-white lg:mb-6 mb-4 capitalize sm:text-[40px] text-3xl leading-[120%] font-semibold"
+              >
+                Webflow
+              </h2>
+              <p class="lg:mb-[30px] mb-5 text-clr_pra text-lg">
+                Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
+                fugit
+              </p>
+              <ul>
+                <li
+                  class="relative flex items-center gap-[10px] text-[#999999] pl-5 mb-2 last:mb-0"
+                >
+                  <span class="w-[9px] h-[9px] bg-clr_base rounded-full"></span>
+                  <p class="text-sm">Testing the website thoroughly launch</p>
+                </li>
+                <li
+                  class="relative flex items-center gap-[10px] text-[#999999] pl-5 mb-2 last:mb-0"
+                >
+                  <span class="w-[9px] h-[9px] bg-clr_base rounded-full"></span>
+                  <p class="text-sm">Choosing typography, color palettes,</p>
+                </li>
+                <li
+                  class="relative flex items-center gap-[10px] text-[#999999] pl-5 mb-2 last:mb-0"
+                >
+                  <span class="w-[9px] h-[9px] bg-clr_base rounded-full"></span>
+                  <p class="text-sm">Refining the design</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------- Work Process End -->
+
+    <!-- ------------Testimonial Start -->
+    <section class="overflow-hidden pt_120 pb_120" id="testimonial">
+      <div
+        class="xl:max-w-[1350px] lg:max-w-[960px] md:max-w-2xl sm:max-w-xl xl mx-auto px-3"
+      >
+        <!-- --------- Heading -->
+        <div
+          class="text-center md:mb-[60px] sm:mb-[50px] mb-[45px] max-w-[920px] mx-auto"
+        >
+          <span
+            class="text-2xl font-caveat text-clr_base relative flex justify-center items-center sm:gap-6 gap-[14px] mx-auto mb-[30px]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <span class="sm:w-20 w-[50px] h-[1px] bg-clr_base"></span>
+            <span>Testimonial</span>
+            <span class="sm:w-20 w-[50px] h-[1px] bg-clr_base"></span>
+          </span>
+          <h2
+            class="font-medium lg:text-6xl md:text-5xl sm:text-4xl text-[29px] text-white lg:leading-[120%] md:leading-tight leading-9"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            Happy Words From Happy Customer
+          </h2>
+        </div>
+        <!-- --------- Heading -->
+        <div
+          class=" bg-common_bg bg-center bg-no-repeat bg-cover rounded-[10px] overflow-hidden lg:py-[130px] lg:px-[60px] md:py-[100px] md:px-[30px] sm:py-4 px-0 py-[10px] relative"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div>
+            <div class="lg:max-w-[66%] w-auto mx-auto">
+              <div
+                class="swiper testimonial__slidewrap sm:mr-[10px] sm:ml-[30px] mr-0 ml-0"
+              >
+                <div class="swiper-wrapper">
+                  <div class=" swiper-slide relative">
+                    <div class="flex lg:mb-10 mb-8 items-center gap-2">
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                    </div>
+                    <i
+                      class="sm:text-xl text-base text-clr_white sm:mb-10 mb-5 block"
+                    >
+                      There are many variations of passages of Lorem Ipsum
+                      available, by injected humour, or randomised words which
+                      don't look even slightly believable. If you are going to
+                      use a passage of Lorem Ipsum, you need to be hidden in
+                      middle of text. All the Lorem Ipsum generators
+                    </i>
+                    <h4
+                      class="text-clr_base mb-2 font-semibold text-2xl leading-[130%]"
+                    >
+                      Shawn Beltran
+                    </h4>
+                    <span class="text-lg text-clr_pra"> Business Owner </span>
+                  </div>
+                  <div class=" swiper-slide relative">
+                    <div class="flex lg:mb-10 mb-8 items-center gap-2">
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                    </div>
+                    <i
+                      class="sm:text-xl text-base text-clr_white sm:mb-10 mb-5 block"
+                    >
+                      There are many variations of passages of Lorem Ipsum
+                      available, by injected humour, or randomised words which
+                      don't look even slightly believable. If you are going to
+                      use a passage of Lorem Ipsum, you need to be hidden in
+                      middle of text. All the Lorem Ipsum generators
+                    </i>
+                    <h4
+                      class="text-clr_base mb-2 font-semibold text-2xl leading-[130%]"
+                    >
+                      Shawn Beltran
+                    </h4>
+                    <span class="text-lg text-clr_pra"> Business Owner </span>
+                  </div>
+                  <div class=" swiper-slide relative">
+                    <div class="flex lg:mb-10 mb-8 items-center gap-2">
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                      <i class="bi-star text-clr_ratting text-xl"></i>
+                    </div>
+                    <i
+                      class="sm:text-xl text-base text-clr_white sm:mb-10 mb-5 block"
+                    >
+                      There are many variations of passages of Lorem Ipsum
+                      available, by injected humour, or randomised words which
+                      don't look even slightly believable. If you are going to
+                      use a passage of Lorem Ipsum, you need to be hidden in
+                      middle of text. All the Lorem Ipsum generators
+                    </i>
+                    <h4
+                      class="text-clr_base mb-2 font-semibold text-2xl leading-[130%]"
+                    >
+                      Shawn Beltran
+                    </h4>
+                    <span class="text-lg text-clr_pra"> Business Owner </span>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination3"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute top-[99px] xl:left-[291px] lg:left-60 lg:block hidden"
+          >
+            <img src="./assets/img/testimonial/quote.png" alt="img" />
+          </div>
+          <div
+            class="absolute top-5 left-5 opacity-10 lg:opacity-100 w-[60px] sm:w-auto"
+          >
+            <img
+              src="./assets/img/testimonial/man1.png"
+              alt="img"
+              class="w-full sm:w-auto"
+            />
+          </div>
+          <div
+            class="absolute left-5 bottom-5 opacity-10 lg:opacity-100 w-[60px] sm:w-auto"
+          >
+            <img
+              src="./assets/img/testimonial/man3.png"
+              alt="img"
+              class="w-full sm:w-auto"
+            />
+          </div>
+          <div
+            class="absolute top-5 right-5 opacity-10 lg:opacity-100 w-[60px] sm:w-auto"
+          >
+            <img
+              src="./assets/img/testimonial/man2.png"
+              alt="img"
+              class="w-full sm:w-auto"
+            />
+          </div>
+          <div
+            class="absolute lg:bottom-[50px] lg:right-[50px] bottom-[15px] right-[15px] sm:block hidden animate-cir5"
+          >
+            <img src="./assets/img/testimonial/testi-arrow.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------ Testimonial End -->
+
+    <!-- ------------ Blogs Start -->
+    <section
+      class="bg-common_bg bg-no-repeat bg-cover bg-center overflow-hidden pt_120 pb_120"
+      id="blog"
+    >
+      <div
+        class="xl:max-w-[1350px] lg:max-w-[960px] md:max-w-2xl sm:max-w-xl xl mx-auto px-3"
+      >
+        <div
+          class="grid xl:grid-cols-[33%_auto] lg:grid-cols-[28%_auto] grid-cols-1 gap-12"
+        >
+          <!-- ------- Left Side -->
+          <div>
+            <!-- ---------- Heading -->
+            <div class="pb-[50px]">
+              <span
+                class="text-2xl font-caveat text-clr_base relative flex items-center sm:gap-6 gap-[14px] mx-auto mb-[30px]"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <span class="sm:w-20 w-[50px] h-[1px] bg-clr_base"></span>
+                My Blogs
+              </span>
+              <h2
+                class="font-medium lg:text-6xl md:text-5xl sm:text-4xl text-[29px] text-white max-w-[620px]"
+                data-aos="fade-down"
+                data-aos-duration="1600"
+              >
+                Recent Posts
+              </h2>
+            </div>
+            <!-- ---------- Heading -->
+            <div>
+              <a
+                href=""
+                class="md:w-52 md:h-52 w-32 h-32 bg-clr_base rounded-full flex justify-center items-center text-center relative before:w-full before:h-full before:rounded-full before:border before:border-clr_base before:content-[''] before:absolute before:top-[10px] before:-left-[7px] before:duration-500 hover:before:-top-[10px]"
+                data-aos="zoom-out-down"
+                data-aos-duration="2000"
+              >
+                <span class="relative z-10">
+                  <i
+                    class="bi-arrow-right mb-[1px] md:text-[28px] text-base text-center flex justify-center text-clr_title transition-all"
+                  >
+                  </i>
+                  <span
+                    class="text-[#282828] md:text-lg text-sm font-medium leading-[30px] capitalize transition-all"
+                  >
+                    Click More Work
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- -------- Left Side -->
+          <!-- ---------- Right Side -->
+          <div>
+            <!-- card 1 -->
+            <div>
+              <div
+                class="flex sm:flex-row flex-col justify-between items-center gap-4 lg:pb-10 pb-[30px] lg:pt-10 pt-[30px] group duration-500 border-b border-b-[rgb(38_37_37)] hover:border-b-clr_base hover:first:border-t-clr_base first:border-t first:border-t-[rgb(38_37_37)]"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div
+                  class="shrink basis-4/5 flex md:flex-row flex-col justify-between md:items-center sm:items-start items-center gap-4"
+                >
+                  <div class="shrink basis-1/2">
+                    <div class="cont">
+                      <span
+                        class="dates text-clr_pra text-base border border-clr_cusborder rounded-[100px] py-[7px] px-[15px] sm:mb-6 mb-[18px] inline-block"
+                      >
+                        October 19, 2023
+                      </span>
+                      <h3
+                        class="xl:text-3xl sm:text-[22px] text-xl text-white sm:leading-[44px] leading-8 font-semibold capitalize"
+                      >
+                        <a
+                          href="./blogDetails.html"
+                          class="text-white duration-500 group-hover:text-clr_base"
+                        >
+                          Brand Design That Helps The Company Grow
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                  <a
+                    href="assets/img/blog/bblog1.png"
+                    class="imgc duration-500 md:opacity-0 opacity-100 group-hover:opacity-100"
+                  >
+                    <img
+                      src="assets/img/blog/bblog1.png"
+                      alt="img-opa "
+                      class="max-w-[290px] h-[157px] cursor-pointer"
+                    />
+                  </a>
+                </div>
+                <a
+                  href="./blogDetails.html"
+                  class="w-[60px] h-[60px] flex justify-center items-center bg-none rounded-full border border-white duration-500 group-hover:border-clr_base"
+                >
+                  <i
+                    class="bi bi-eye text-white duration-500 group-hover:text-clr_base"
+                  ></i>
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-        <div
-          class="nav-butn absolute top-[0] right-[15px] text-[25px] cursor-pointer lg:hidden block "
-        >
-          <span class="pe-7s-menu"></span>
-        </div>
-      </div>
-    </div>
+            <!-- card 1 -->
 
-    <!-- ==================== End Navbar ==================== -->
-
-    <main
-      class="container w-full  mx-auto xxl:max-w-[1280px] xl:max-w-[1140px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] mx-auto px-[3px]"
-    >
-      <!-- ==================== Start Intro ==================== -->
-
-      <section class="intro-profile md-mb50">
-        <div
-          class="row rest flex flex-col md:flex-row justify-normal md:justify-between"
-        >
-          <div
-            class="md:w-[33.33%] rounded-l-3xl px-[15px] w-full py-[80px] px-[15px] md:px-[40px] mb-[-80px] overflow-hidden bg-dark"
-          >
-            <div
-              class="cont valign flex justify-center items-center py-[40px] px-[15px] border border-[#ffffff0d] rounded-lg min-h-[calc(100%-80px)]"
-            >
-              <div class="w-full">
-                <div class="img relative">
-                  <img src="assets/imgs/header/profile.jpg" alt="" />
-                  <span
-                    style="
-                      -webkit-backdrop-filter: blur(5px);
-                      backdrop-filter: blur(5px);
-                    "
-                    class="icon absolute absolute top-8 -left-5 transform rotate-3 w-10 h-10 rounded-lg border border-white border-opacity-10 p-2 bg-white bg-opacity-5 z-30"
-                  >
-                    <img src="assets/imgs/header/icon1.png" alt="" />
-                  </span>
-                  <span
-                    style="
-                      -webkit-backdrop-filter: blur(5px);
-                      backdrop-filter: blur(5px);
-                    "
-                    class="icon absolute w-10 h-10 rounded-lg border border-white border-opacity-10 p-2 bg-white bg-opacity-5 z-30 absolute bottom-[30px] left-[20px] transform rotate-6"
-                  >
-                    <img src="assets/imgs/header/icon2.png" alt="" />
-                  </span>
-                  <span
-                    style="
-                      -webkit-backdrop-filter: blur(5px);
-                      backdrop-filter: blur(5px);
-                    "
-                    class="icon absolute w-10 h-10 rounded-lg border border-white border-opacity-10 p-2 top-[40%] !right-[-20px] bg-white bg-opacity-5 z-30"
-                  >
-                    <img src="assets/imgs/header/icon4.png" alt="" />
-                  </span>
-                </div>
-                <div class="info text-center mt-[30px]">
-                  <h5 class="font-[500] text-[24px]">Pablo Gavi</h5>
-                  <p class="text-[13px] font-[300] text-[#ddd] uppercase">
-                    Available For Freelance
-                  </p>
-                </div>
+            <!-- card 2 -->
+            <div>
+              <div
+                class="flex sm:flex-row flex-col justify-between items-center gap-4 lg:pb-10 pb-[30px] lg:pt-10 pt-[30px] group duration-500 border-b border-b-[rgb(38_37_37)] hover:border-b-clr_base"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div
-                  class="mx-auto w-[65%] md:w-[80%] grid grid-cols-4 items-center content-enter justify-content-center justify-center text-center mt-[20px]"
+                  class="shrink basis-4/5 flex md:flex-row flex-col justify-between md:items-center sm:items-start items-center gap-4"
                 >
-                  <a href="#0"
-                    ><i
-                      class="fab fa-behance w-[45px] h-[45px] leading-10 text-center text-[12px] rounded-md flex items-center justify-center border border-[#fff] border-opacity-20 transition-all duration-400 ease-in-out hover:bg-[#fff] hover:text-[#1d1d1d]"
-                    ></i
-                  ></a>
-                  <a href="#0"
-                    ><i
-                      class="fab fa-github w-[45px] h-[45px] leading-10 text-center text-[12px] rounded-md flex items-center justify-center border border-[#fff] border-opacity-20 transition-all duration-400 ease-in-out hover:bg-[#fff] hover:text-[#1d1d1d]"
-                    ></i
-                  ></a>
-                  <a href="#0"
-                    ><i
-                      class="fab fa-linkedin-in w-[45px] h-[45px] leading-10 text-center text-[12px] rounded-md flex items-center justify-center border border-[#fff] border-opacity-20 transition-all duration-400 ease-in-out hover:bg-[#fff] hover:text-[#1d1d1d]"
-                    ></i
-                  ></a>
-                  <a href="#0"
-                    ><i
-                      class="fab fa-dribbble w-[45px] h-[45px] leading-10 text-center text-[12px] rounded-md flex items-center justify-center border border-[#fff] border-opacity-20 transition-all duration-400 ease-in-out hover:bg-[#fff] hover:text-[#1d1d1d]"
-                    ></i
-                  ></a>
+                  <div class="shrink basis-1/2">
+                    <div class="cont">
+                      <span
+                        class="dates text-clr_pra text-base border border-clr_cusborder rounded-[100px] py-[7px] px-[15px] sm:mb-6 mb-[18px] inline-block"
+                      >
+                        October 19, 2023
+                      </span>
+                      <h3
+                        class="xl:text-3xl sm:text-[22px] text-xl text-white sm:leading-[44px] leading-8 font-semibold capitalize"
+                      >
+                        <a
+                          href="./blogDetails.html"
+                          class="text-white duration-500 group-hover:text-clr_base"
+                        >
+                          Fresh Design Ideas & Inspiration For 2023
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                  <a
+                    href="assets/img/blog/bblog2.png"
+                    class="imgc duration-500 md:opacity-0 opacity-100 group-hover:opacity-100"
+                  >
+                    <img
+                      src="assets/img/blog/bblog2.png"
+                      alt="img-opa "
+                      class="max-w-[290px] h-[157px] cursor-pointer"
+                    />
+                  </a>
                 </div>
+                <a
+                  href="./blogDetails.html"
+                  class="w-[60px] h-[60px] flex justify-center items-center bg-none rounded-full border border-white duration-500 group-hover:border-clr_base"
+                >
+                  <i
+                    class="bi bi-eye text-white duration-500 group-hover:text-clr_base"
+                  ></i>
+                </a>
               </div>
             </div>
-          </div>
-          <div
-            class="md:w-[66.66%] after:hidden md:after:inline-block px-[15px] w-full content bg-dark py-[80px] px-[15px] md:px-[40px] border-r rounded-r-3xl border-dark relative text-[30px] md:text-[40px] lg:text-[55px] font-[500] leading-[1.3] after:content-[''] after:w-[0px] after:h-[0px] after:border-t-[83px] after:border-t-[#1d1d1d] after:border-r-[80px] after:border-transparent after:absolute after:left-[-5px] after:bottom-[-83px]"
-          >
-            <h1 class="text-[30px] md:text-[40px] lg:text-[55px] font-[500] leading-[1.3]">
-              Hello, I’m <span class="text-main">Pablo Gavi</span>, Front-end
-              Developer and
-              <span class="bord px-[20px] py-[0] border-[1px] border-[solid] border-[#ffffff1a] relative inline-block  
-              after:content-[''] after:w-[6px] after:h-[6px] after:rounded-[50%] after:bg-[#fff] after:absolute after:pointer-events-none after:box-border after:top-[-3px] after:right-[-3px]
-              before:content-[''] before:w-[6px] before:h-[6px] before:rounded-[50%] before:bg-[#fff] before:absolute before:pointer-events-none before:box-border before:top-[-3px] before:left-[-3px]">UX / UI Designer <i class="after:content-[''] after:w-[6px] after:h-[6px] after:rounded-[50%] after:bg-[#fff] after:absolute after:pointer-events-none after:box-border after:bottom-[-3px] after:right-[-3px]
-              before:content-[''] before:w-[6px] before:h-[6px] before:rounded-[50%] before:bg-[#fff] before:absolute before:pointer-events-none before:box-border before:bottom-[-3px] before:left-[-3px]"></i></span> Based in
-              California.
-            </h1>
-            <div class="stauts mt-[80px]">
-              <div class="md:flex items-center ">
-                <div class="mr-[40px]  md:mt-[0px]">
-                  <div class="flex items-center">
-                    <h2 class="text-[50px] lg:text-[70px] font-[500]">14</h2>
-                    <p
-                      class="pl-[20px] leading-[1.3] text-[15px] font-[300px] text-[#ddd] m-0"
-                    >
-                      Years <br />
-                      of Experance
-                    </p>
+            <!-- card 2 -->
+
+            <!-- card 3 -->
+            <div>
+              <div
+                class="flex sm:flex-row flex-col justify-between items-center gap-4 lg:pb-10 pb-[30px] lg:pt-10 pt-[30px] group duration-500 border-b border-b-[rgb(38_37_37)] hover:border-b-clr_base"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div
+                  class="shrink basis-4/5 flex md:flex-row flex-col justify-between md:items-center sm:items-start items-center gap-4"
+                >
+                  <div class="shrink basis-1/2">
+                    <div class="cont">
+                      <span
+                        class="dates text-clr_pra text-base border border-clr_cusborder rounded-[100px] py-[7px] px-[15px] sm:mb-6 mb-[18px] inline-block"
+                      >
+                        October 19, 2023
+                      </span>
+                      <h3
+                        class="xl:text-3xl sm:text-[22px] text-xl text-white sm:leading-[44px] leading-8 font-semibold capitalize"
+                      >
+                        <a
+                          href="./blogDetails.html"
+                          class="text-white duration-500 group-hover:text-clr_base"
+                        >
+                          Fresh Design Ideas & Inspiration For 2023
+                        </a>
+                      </h3>
+                    </div>
                   </div>
-                </div>
-                <div class="mr-[40px] mt-[25px] md:mt-[0px]">
-                  <div class="flex items-center">
-                    <h2 class="text-[50px] lg:text-[70px] font-[500]">6k</h2>
-                    <p
-                      class="pl-[20px] leading-[1.3] text-[15px] font-[300px] text-[#ddd] m-0"
-                    >
-                      Clients <br />
-                      Worldwide
-                    </p>
-                  </div>
-                </div>
-                <div class="mt-[25px] md:mt-[0px] w-[160px] md:w-auto">
-                  <div
-                    class="butn-presv [perspective:500px] w-[160px] md:w-auto "
+                  <a
+                    href="assets/img/blog/bblog3.png"
+                    class="imgc duration-500 md:opacity-0 opacity-100 group-hover:opacity-100"
                   >
-                    <a href="#0" class="bg-transparent w-full h-full block py-[14px] px-[35px] border border-[#fff]   text-[14px] hover:bg-[#fff] rounded-md hover:text-dark transition-all duration-[.5s] ease-in-out [transform:rotateX(20deg)] hover:[transform:rotateX(0deg)]    ">
-                      <span class="inline-block">Dwonload C.V</span>
+                    <img
+                      src="assets/img/blog/bblog3.png"
+                      alt="img-opa "
+                      class="max-w-[290px] h-[157px] cursor-pointer"
+                    />
+                  </a>
+                </div>
+                <a
+                  href="./blogDetails.html"
+                  class="w-[60px] h-[60px] flex justify-center items-center bg-none rounded-full border border-white duration-500 group-hover:border-clr_base"
+                >
+                  <i
+                    class="bi bi-eye text-white duration-500 group-hover:text-clr_base"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <!-- card 3 -->
+          </div>
+          <!-- ---------- Right Side -->
+        </div>
+      </div>
+    </section>
+    <!-- ------------ Blogs End -->
+
+    <!-- -------- Footer -->
+    <footer>
+      <div
+        class="xl:max-w-[1350px] lg:max-w-[960px] md:max-w-2xl sm:max-w-xl xl mx-auto px-3"
+      >
+        <div class="pt_120 pb-[120px]">
+          <div
+            class="fl text-[10.5vw] uppercase font-medium leading-none w-full xl:mb-[60px] sm:mb-10 mb-5 border border-clr_cusborder rounded-lg text-center p-[10px] text-white"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Get In Touch
+          </div>
+          <div class="flex md:flex-row flex-col justify-between gap-4">
+            <div class="basis-1/2 shrink">
+              <div>
+                <p
+                  class="xl:mb-[60px] lg:mb-10 mb-[10px] lg:text-2xl sm:text-lg text-[17px] text-white max-w-lg"
+                >
+                  Hello, I’m David Matias, Website & User Interface Designer
+                  based in London.
+                </p>
+                <a
+                  href=""
+                  class="text-white lg:text-4xl sm:text-[28px] text-lg underline capitalize"
+                >
+                  davidmatias333@.com
+                </a>
+              </div>
+            </div>
+            <div class="basis-1/2 shrink">
+              <div>
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <a
+                      href=""
+                      class="lg:py-[26px] py-[14px] lg:px-7 px-6 rounded-[10px] border border-clr_cusborder flex items-center justify-between text-white lg:text-2xl text-xl duration-500 hover:bg-clr_base hover:border-clr_base hover:text-clr_title group"
+                    >
+                      Facebook
+                      <i
+                        class="bi-arrow-right text-white text-[22px] duration-500 group-hover:text-clr_title"
+                      ></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href=""
+                      class="lg:py-[26px] py-[14px] lg:px-7 px-6 rounded-[10px] border border-clr_cusborder flex items-center justify-between text-white lg:text-2xl text-xl duration-500 hover:bg-clr_base hover:border-clr_base hover:text-clr_title group"
+                    >
+                      Twitter
+                      <i
+                        class="bi-arrow-right text-white text-[22px] duration-500 group-hover:text-clr_title"
+                      ></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href=""
+                      class="lg:py-[26px] py-[14px] lg:px-7 px-6 rounded-[10px] border border-clr_cusborder flex items-center justify-between text-white lg:text-2xl text-xl duration-500 hover:bg-clr_base hover:border-clr_base hover:text-clr_title group"
+                    >
+                      Linkdin
+                      <i
+                        class="bi-arrow-right text-white text-[22px] duration-500 group-hover:text-clr_title"
+                      ></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href=""
+                      class="lg:py-[26px] py-[14px] lg:px-7 px-6 rounded-[10px] border border-clr_cusborder flex items-center justify-between text-white lg:text-2xl text-xl duration-500 hover:bg-clr_base hover:border-clr_base hover:text-clr_title group"
+                    >
+                      Webflow
+                      <i
+                        class="bi-arrow-right text-white text-[22px] duration-500 group-hover:text-clr_title"
+                      ></i>
                     </a>
                   </div>
                 </div>
@@ -315,1242 +2474,55 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- ==================== End Intro ==================== -->
-
-      <!-- ==================== Start Navbar ==================== -->
-
-      <nav class=" navbar md:mt-[50px] md:relative hidden md:!block md:w-auto md:pt-0 md:pb-0 md:bg-transparent md:border-none  hidden absolute top-0 z-10   w-full pt-[80px] pb-[40px] bg-[#131313] mt-0 border-b-[2px_solid_rgba(255,_255,_255,_0.2)] ">
-        <div class="flex md:flex-row justify-center md:justify-end rest">
-          <div class="md:w-[66.66%] rest">
-            <!-- navbar links -->
-            <ul
-              class="navbar-nav z-50 bg-[#131313] tracking-[0.4px] uppercase md:bg-dark flex justify-center text-center md:justify-end p-5 py-[20px] md:pr-[40px] md:pl-[5px] md:rounded-t-lg flex flex-col md:flex-row md:w-[calc(100%-80px)] w-full md:ml-[80px] relative after:hidden md:after:block  after:content-[''] after:w-[0px] after:h-[0px] after:border-b-[75px] after:border-b-dark after:border-l-[77px] after:border-l-[transparent] after:absolute after:left-[-75px] after:bottom-[0]"
-            >
-              <li
-                class="nav-item text-[18px] md:text-[12px] py-[10px] px-[15px] tracking-wide uppercase"
-              >
-                <a href="#0" data-scroll-nav="0"><span>Home</span></a>
+      </div>
+      <div class=" bg-common_bg bg-no-repeat bg-center bg-cover">
+        <div
+          class="xl:max-w-[1350px] lg:max-w-[960px] md:max-w-2xl sm:max-w-xl xl mx-auto px-3"
+        >
+          <div
+            class="flex flex-col lg:flex-row items-center justify-between py-[34px] lg:flex-nowrap gap-4"
+          >
+            <p class="text-white text-lg">
+              Copyright © 2023
+              <a href="" class="text-clr_base"> Matias. </a>
+              All rights reserved.
+            </p>
+            <ul class="terms flex gap-[38px]">
+              <li>
+                <a
+                  href=""
+                  class="text-lg text-white duration-500 hover:text-clr_base"
+                >
+                  Terms & Condition
+                </a>
               </li>
-              <li
-                class="nav-item text-[18px] md:text-[12px] py-[10px] px-[15px] tracking-wide uppercase"
-              >
-                <a href="#0" data-scroll-nav="1"><span>Services</span></a>
-              </li>
-              <li
-                class="nav-item text-[18px] md:text-[12px] py-[10px] px-[15px] tracking-wide uppercase"
-              >
-                <a href="#0" data-scroll-nav="2"><span>About</span></a>
-              </li>
-              <li
-                class="nav-item text-[18px] md:text-[12px] py-[10px] px-[15px] tracking-wide uppercase"
-              >
-                <a href="#0" data-scroll-nav="3"><span>Portfolio</span></a>
-              </li>
-              <li
-                class="nav-item text-[18px] md:text-[12px] py-[10px] px-[15px] tracking-wide uppercase"
-              >
-                <a href="#0" data-scroll-nav="4"><span>Price</span></a>
-              </li>
-              <li
-                class="nav-item text-[18px] md:text-[12px] py-[10px] px-[15px] tracking-wide uppercase"
-              >
-                <a href="#0" data-scroll-nav="5"><span>Contact</span></a>
-              </li>
-              <li
-                class="nav-item text-[18px] md:text-[12px] py-[10px] px-[15px] tracking-wide uppercase"
-              >
-                <a href="#0" data-scroll-nav="6"><span>Blog</span></a>
+              <li>
+                <a
+                  href=""
+                  class="text-lg text-white duration-500 hover:text-clr_base"
+                >
+                  Privacy Policy
+                </a>
               </li>
             </ul>
-          </div>
-        </div>
-      </nav>
-
-      <!-- ==================== End Navbar ==================== -->
-
-      <section class="in-box md:mt-0 mt-[70px]">
-        <!-- ==================== Start Services ==================== -->
-
-        <div
-          class="sec-box px-[15px] md:px-[40px] lg:px-[50px] bg-dark rounded-tl-[15px] py-[100px] border-b border-[#ffffff1a] section-padding bord-thin-bottom"
-          data-scroll-index="1"
-        >
-          <div class="sec-head mb-[80px] wow fadeInUp">
-            <div class="row w-full flex justify-center">
-              <div class="col-lg-6 px-[15px] w-[50%] text-center">
-                <h6
-                  class="sub-title opacity-70 mb-[15px] text-[14px] font-[300] uppercase tracking-widest"
-                >
-                  Our Services
-                </h6>
-                <h3 class="font-[500] md:text-[38px] text-[24px]">
-                  Turn Information
-                </br>
-                  <span class="text-main">Into Actionable</span> Insights
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="row services grid sm:grid-cols-2 grid-cols-1">
-            <div class="px-[15px] ">
-              <div class="item relative overflow-hidden z-20 mb-[40px] py-[50px] w-full px-[30px] bg-[#1f1e1e] border border-[#444343] rounded-2xl wow fadeIn" data-wow-delay=".2s">
-              
-                <span class="icon-img-70  opacity-[70%] !w-[70px]">
-                  <img class="!w-[70px]" src="assets/imgs/serv-img/1.png" alt="" />
-                </span>
-                <h6 class="text-u ls1 mt-[40px] mb-[15px] uppercase tracking-widest text-[18px] font-[400]">UI / UX Design</h6>
-                <p class="font-[300] text-[15px] text-[#ddd]">
-                  There are many variations of passages of available but to the
-                  majority have suffered but the into majority.
-                </p>
-
-
-                <div class="bord-color w-[92%] h-[5px] bg-main absolute bottom-[-4px] left-[4%] opacity-0 z-[-1] rounded-lg transition-all duration-500 "></div>
-              </div>
-            </div>
-            <div class=" px-[15px]">
-              <div class="item relative overflow-hidden z-20 mb-[40px] py-[50px] w-full px-[30px] bg-[#1f1e1e] border border-[#444343] rounded-2xl wow fadeIn" data-wow-delay=".2s">
-                <span class="icon-img-70  opacity-[70%] !w-[70px]">
-                  <img class="!w-[70px]" src="assets/imgs/serv-img/2.png" alt="" />
-                </span>
-                <h6 class="text-u ls1 mt-[40px] mb-[15px] uppercase tracking-widest text-[18px] font-[400]">Web Development</h6>
-                <p class="font-[300] text-[15px] text-[#ddd]">
-                  There are many variations of passages of available but to the
-                  majority have suffered but the into majority.
-                </p>
-                <div class="bord-color w-[92%] h-[5px] bg-main absolute bottom-[-4px] left-[4%] opacity-0 z-[-1] rounded-lg transition-all duration-500 "></div>
-              </div>
-            </div>
-            <div class=" px-[15px] col-md-6">
-              <div class="item relative overflow-hidden z-20 mb-[40px] py-[50px] w-full px-[30px] bg-[#1f1e1e] border border-[#444343] rounded-2xl wow fadeIn" data-wow-delay=".2s">
-                <span class="icon-img-70  opacity-[70%] !w-[70px]">
-                  <img class="!w-[70px]" src="assets/imgs/serv-img/3.png" alt="" />
-                </span>
-                <h6 class="text-u ls1 mt-[40px] mb-[15px] uppercase tracking-widest text-[18px] font-[400]">SEO / Marketing</h6>
-                <p class="font-[300] text-[15px] text-[#ddd]">
-                  There are many variations of passages of available but to the
-                  majority have suffered but the into majority.
-                </p>
-                <div class="bord-color w-[92%] h-[5px] bg-main absolute bottom-[-4px] left-[4%] opacity-0 z-[-1] rounded-lg transition-all duration-500 "></div>
-              </div>
-            </div>
-            <div class=" px-[15px] col-md-6">
-              <div class="item relative overflow-hidden z-20 mb-[40px] py-[50px] w-full px-[30px] bg-[#1f1e1e] border border-[#444343] rounded-2xl wow fadeIn" data-wow-delay=".2s">
-                <span class="icon-img-70  opacity-[70%] !w-[70px]">
-                  <img class="!w-[70px]" src="assets/imgs/serv-img/4.png" alt="" />
-                </span>
-                <h6 class="text-u ls1 mt-[40px] mb-[15px] uppercase tracking-widest text-[18px] font-[400]">Technology Solution</h6>
-                <p class="font-[300] text-[15px] text-[#ddd]">
-                  There are many variations of passages of available but to the
-                  majority have suffered but the into majority.
-                </p>
-                <div class="bord-color w-[92%] h-[5px] bg-main absolute bottom-[-4px] left-[4%] opacity-0 z-[-1] rounded-lg transition-all duration-500 "></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ==================== End Services ==================== -->
-
-        <!-- ==================== Start Skills ==================== -->
-
-        <div
-          class="sec-box px-[15px] md:px-[40px] lg:px-[50px] py-[100px] bg-dark skills section-padding bord-thin-bottom"
-          data-scroll-index="2"
-        >
-          <div>
-<div  class="row grid grid-cols-1 md:grid-cols-3">
-  <div class="col-lg-4 col-span-1 flex items-center justify-center px-[15px]">
-    <div class="sec-head md-mb80 wow fadeIn">
-      <h6 class="sub-title opacity-[70%] font-[300] mb-[15px] text-[14px] tracking-widest uppercase">Our Skills</h6>
-      <h3 class="sm:text-[38px] text-[24px] font-[500]"><span class="text-main ">Awards</span> & Recognitions</h3>
-    </div>
-  </div>
-  <div class="col-lg-8 col-span-2 px-[15px]">
-    <div class="row grid sm:grid-cols-2 grid-cols-1">
-      <div class="col-md-6 mx-[20px]">
-        <div class="item relative border rounded-2xl border-[#444343] mb-[30px] px-[30px] pt-[30px]">
-          <div class="flex items-center gap-x-[3px]  mb-[30px]">
-            <div class="mr-[30px]">
-              <div class="img icon-img-40 w-[40px]">
-                <img src="assets/imgs/resume/s1.png" alt="" />
-              </div>
-            </div>
-            <div>
-              <h6 class="text-[14px] font-[400]">UI / UX Design</h6>
-            </div>
-          </div>
-          <div class="skill-progress w-[85%] mx-auto absolute bottom-0 left-0 flex jus">
-
-            <span class="progres bg-[#fff] absolute bottom-0 left-[9%] h-[2px] rounded-xl w-[0px] transtion transition-all duration-[2s] ease-in-out" data-value="95%"></span>
-          </div>
-        
-          <span class="value border border-[#ffffff1a] rounded-2xl absolute top-[10px] py-[3px] px-[10px] right-[10px] text-[12px] font-[300]">95%</span>
-        </div>
-      </div>
-      <div class="col-md-6 mx-[20px]">
-        <div class="item relative border rounded-2xl border-[#444343] mb-[30px] px-[30px] pt-[30px]">
-          <div class="flex items-center gap-x-[3px]  mb-[30px]">
-            <div class="mr-[30px]">
-              <div class="img icon-img-40 w-[40px]">
-                <img src="assets/imgs/resume/s2.png" alt="" />
-              </div>
-            </div>
-            <div>
-              <h6 class="text-[14px] font-[400]">Web Development </h6>
-            </div>
-          </div>
-          <div class="skill-progress w-[85%] mx-auto absolute bottom-0 left-0 flex jus">
-
-            <span class="progres bg-[#fff] absolute bottom-0 left-[9%] h-[2px] rounded-xl w-[0px] transtion transition-all duration-[2s] " data-value="95%"></span>
-          </div>
-        
-          <span class="value border border-[#ffffff1a] rounded-2xl absolute top-[10px] py-[3px] px-[10px] right-[10px] text-[12px] font-[300]">90%</span>
-        </div>
-      </div>
-      <div class="col-md-6 mx-[20px]">
-        <div class="item relative border rounded-2xl border-[#444343] mb-[30px] px-[30px] pt-[30px]">
-          <div class="flex items-center gap-x-[3px]  mb-[30px]">
-            <div class="mr-[30px]">
-              <div class="img icon-img-40 w-[40px]">
-                <img src="assets/imgs/resume/s3.png" alt="" />
-              </div>
-            </div>
-            <div>
-              <h6 class="text-[14px] font-[400]">Graphic Design </h6>
-            </div>
-          </div>
-          <div class="skill-progress w-[85%] mx-auto absolute bottom-0 left-0 flex jus">
-
-            <span class="progres bg-[#fff] absolute bottom-0 left-[9%] h-[2px] rounded-xl w-[0px] transition-all duration-[2s]" data-value="95%"></span>
-          </div>
-        
-          <span class="value border border-[#ffffff1a] rounded-2xl absolute top-[10px] py-[3px] px-[10px] right-[10px] text-[12px] font-[300]">80%</span>
-        </div>
-      </div>
-      <div class="col-md-6 mx-[20px]">
-        <div class="item relative border rounded-2xl border-[#444343] mb-[30px] px-[30px] pt-[30px]">
-          <div class="flex items-center gap-x-[3px]  mb-[30px]">
-            <div class="mr-[30px]">
-              <div class="img icon-img-40 w-[40px]">
-                <img src="assets/imgs/resume/s4.png" alt="" />
-              </div>
-            </div>
-            <div>
-              <h6 class="text-[14px] font-[400]">WordPress</h6>
-            </div>
-          </div>
-          <div class="skill-progress w-[85%] mx-auto absolute bottom-0 left-0 flex jus">
-
-            <span class="progres bg-[#fff] absolute bottom-0 left-[9%] h-[2px] rounded-xl w-[0px] transition-all duration-[2s]" data-value="95%"></span>
-          </div>
-        
-          <span class="value border border-[#ffffff1a] rounded-2xl absolute top-[10px] py-[3px] px-[10px] right-[10px] text-[12px] font-[300]">60%</span>
-        </div>
-      </div>
-   
-  </div>
-  
-</div>
-</div>
-
-           
-          
-          <div class="awards mt-[100px] w-full">
-            <div class="row mx-auto md:mx-[-15px] w-full grid sm:grid-cols-3 gap-[20px] grid-cols-1">
-              <div class="col-lg-4 px-[15px] ">
-                <div
-                  class="award-item sub-bg bg-sub_dark rounded-xl p-[40px] h-[100%] md-mb30 wow fadeInUp"
-                  data-wow-delay=".2s"
-                >
-                  <div class="w-full flex justify-between">
-                    <div>
-                      <span>01</span>
-                    </div>
-                    <div >
-                      <span>2019</span>
-                    </div>
-                  </div>
-                  <div class="img icon-img-100 w-[100px] mt-[80px] mb-[30px]">
-                    <img src="assets/imgs/awards/2.png" alt="" />
-                  </div>
-                  <h6 class="font-[400] text-[18px]">02x Designer Award</h6>
-                  <span class="font-[300] uppercase tracking-widest text-[14px] text-main mt-[10px]">Nominee</span>
-                </div>
-              </div>
-              <div class="col-lg-4 px-[15px] ">
-                <div
-                  class="award-item sub-bg bg-sub_dark rounded-xl p-[40px] h-[100%] md-mb30 wow fadeInUp"
-                  data-wow-delay=".2s"
-                >
-                  <div class="w-full flex justify-between">
-                    <div>
-                      <span>01</span>
-                    </div>
-                    <div >
-                      <span>2019</span>
-                    </div>
-                  </div>
-                  <div class="img icon-img-100 w-[100px] mt-[80px] mb-[30px]">
-                    <img src="assets/imgs/awards/1.png" alt="" />
-                  </div>
-                  <h6 class="font-[400] text-[18px]">02x Designer Award</h6>
-                  <span class="font-[300] uppercase tracking-widest text-[14px] text-main mt-[10px]">Nominee</span>
-                </div>
-              </div>
-              <div class="col-lg-4 px-[15px] ">
-                <div
-                  class="award-item sub-bg bg-sub_dark rounded-xl p-[40px] h-[100%] md-mb30 wow fadeInUp"
-                  data-wow-delay=".2s"
-                >
-                  <div class="w-full flex justify-between">
-                    <div>
-                      <span>01</span>
-                    </div>
-                    <div >
-                      <span>2019</span>
-                    </div>
-                  </div>
-                  <div class="img icon-img-100 w-[100px] mt-[80px] mb-[30px]">
-                    <img src="assets/imgs/awards/3.png" alt="" />
-                  </div>
-                  <h6 class="font-[400] text-[18px]">02x Designer Award</h6>
-                  <span class="font-[300] uppercase tracking-widest text-[14px] text-main mt-[10px]">Nominee</span>
-                </div>
-              </div>
-             
-            </div>
-          </div>
-        </div>
-        </div>
-        <!-- ==================== End Skills ==================== -->
-        <!-- ==================== Start Portfolio ==================== -->
-
-        <div class=" py-[100px] px-[15px] md:px-[40px] lg:px-[50px] bg-dark mt-[3px] rounded-br-[30px]  sec-box portfolio section-padding" data-scroll-index="3">
-          <div class="sec-head mb-[30px]">
-            <div class="row grid sm:grid-cols-2 grid-cols-1 justify-between">
-              <div class="col-lg-6 px-[15px]">
-                <h6 class="sub-title opacity-[70%] mb-[15px] font-[300] text-[14px] uppercase tracking-widest">Our Portfolio</h6>
-                <h3 class="text-[24px] md:text-[38px]">
-                  Look at my work & <br />
-                  give us <span class="text-main">your feedback</span>
-                </h3>
-              </div>
-              <div class="col-lg-6 px-[15px] flex items-canter justify-center w-full ">
-                <div class="go-more w-full flex justify-end items-canter">
-                  <a href="works.html" class=" w-full flex items-canter justify-end">
-                    <span class="flex">View All Works <svg class="inline-block w-[18px] h-[18px] stroke-[#fff] fill-[#fff] -rotate-45 ml-[15px]
-                      " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.2 32.3" xml:space="preserve" style="stroke-width: 2;">
-                        <line x1="0" y1="16" x2="33" y2="16"></line>
-                        <line x1="17.3" y1="0.7" x2="33.2" y2="16.5"></line>
-                        <line x1="17.3" y1="31.6" x2="33.5" y2="15.4"></line>
-                    </svg></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery px-[20px] !h-auto gap-[20px] grid md:grid-cols-2 grid-cols-1">
-            <div class="">
-              <div class="item gallary-item mt-[50px] wow fadeInUp" data-wow-delay=".2s">
-                <div class="relative rounded-xl overflow-hidden p-[5px] border border-main border-opacity-0 hover:border-opacity-[100%]  transition-all duration-700 ease-in-out">
-                  <a class=" rounded-xl overflow-hidden w-full h-full" href="project-details.html">
-                    <img class="rounded-xl overflow-hidden w-full h-[410px] object-cover object-cente" src="assets/imgs/works/1.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="cont mt-[30px] px-[15px] flex justify-between items-center">
-                  <div>
-                    <span class="branding transition-all duration-700 ease-in-out text-[12px] py-[6px] px-[16px] rounded-[30px] border border-[#ffffff1a] ">Branding</span>
-                    <h6 class="line-height-1 text-[18px] font-[500] mt-[15px]">
-                      <a href="project-details.html">GeekFolio Portfolio</a>
-                    </h6>
-                  </div>
-                  <div class="flex justify-end w-[50px] h-[50] ">
-                    <div class="arrow  h-[50px] w-[50px]">
-                      <a class="h-[50px] w-[50px] text-[#fff] overflow-hidden" href="project-details.html">
-                  
-                        <svg class="inline-block arrow w-[25px]  stroke-[#fff] fill-[#fff] -rotate-45 ml-[15px]
-                        " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.2 32.3" xml:space="preserve" style="stroke-width: 2;">
-                          <line x1="0" y1="16" x2="33" y2="16"></line>
-                          <line x1="17.3" y1="0.7" x2="33.2" y2="16.5"></line>
-                          <line x1="17.3" y1="31.6" x2="33.5" y2="15.4"></line>
-                      </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="">
-              <div class="item gallary-item mt-[50px] wow fadeInUp" data-wow-delay=".2s">
-                <div class="relative rounded-xl overflow-hidden p-[5px] border border-main border-opacity-0 hover:border-opacity-[100%]  transition-all duration-700 ease-in-out">
-                  <a class="rounded-xl overflow-hidden w-full h-full" href="project-details.html">
-                    <img class="rounded-xl overflow-hidden w-full h-[410px] object-cover object-cente" src="assets/imgs/works/2.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="cont mt-[30px] px-[15px] flex justify-between items-center">
-                  <div>
-                    <span class="text-[12px] branding py-[6px] px-[16px] rounded-[30px] border border-[#ffffff1a] ">Branding</span>
-                    <h6 class="line-height-1 text-[18px] font-[500] mt-[15px]">
-                      <a href="project-details.html">Luxury Modern Website</a>
-                    </h6>
-                  </div>
-                  <div class="flex justify-end w-[50px] h-[50] ">
-                    <div class="arrow  h-[50px] w-[50px]">
-                      <a class="h-[50px] w-[50px] text-[#fff] overflow-hidden" href="project-details.html">
-                  
-                        <svg class="arrow inline-block w-[25px]  stroke-[#fff] fill-[#fff] -rotate-45 ml-[15px]
-                        " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.2 32.3" xml:space="preserve" style="stroke-width: 2;">
-                          <line x1="0" y1="16" x2="33" y2="16"></line>
-                          <line x1="17.3" y1="0.7" x2="33.2" y2="16.5"></line>
-                          <line x1="17.3" y1="31.6" x2="33.5" y2="15.4"></line>
-                      </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="">
-              <div class="item gallary-item mt-[50px] wow fadeInUp" data-wow-delay=".2s">
-                <div class="relative rounded-xl overflow-hidden p-[5px] border border-main border-opacity-0 hover:border-opacity-[100%]  transition-all duration-700 ease-in-out">
-                  <a class="rounded-xl overflow-hidden w-full h-full" href="project-details.html">
-                    <img class="rounded-xl overflow-hidden w-full h-[410px] object-cover object-cente" src="assets/imgs/works/3.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="cont mt-[30px] px-[15px] flex justify-between items-center">
-                  <div>
-                    <span class="branding text-[12px] py-[6px] px-[16px] rounded-[30px] border border-[#ffffff1a] ">Branding</span>
-                    <h6 class="line-height-1 text-[18px] font-[500] mt-[15px]">
-                      <a href="project-details.html">GeekFolio Portfolio</a>
-                    </h6>
-                  </div>
-                  <div class="flex justify-end w-[50px] h-[50] ">
-                    <div class="arrow  h-[50px] w-[50px]">
-                      <a class="h-[50px] w-[50px] text-[#fff] overflow-hidden" href="project-details.html">
-                  
-                        <svg class="arrow inline-block w-[25px]  stroke-[#fff] fill-[#fff] -rotate-45 ml-[15px]
-                        " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.2 32.3" xml:space="preserve" style="stroke-width: 2;">
-                          <line x1="0" y1="16" x2="33" y2="16"></line>
-                          <line x1="17.3" y1="0.7" x2="33.2" y2="16.5"></line>
-                          <line x1="17.3" y1="31.6" x2="33.5" y2="15.4"></line>
-                      </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="">
-              <div class="gallary-item item mt-[50px] wow fadeInUp" data-wow-delay=".2s">
-                <div class="relative rounded-xl overflow-hidden p-[5px] border border-main border-opacity-0 hover:border-opacity-[100%]  transition-all duration-700 ease-in-out">
-                  <a class="rounded-xl overflow-hidden w-full h-full" href="project-details.html">
-                    <img class="rounded-xl overflow-hidden w-full h-[410px] object-cover object-cente" src="assets/imgs/works/4.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="cont mt-[30px] px-[15px] flex justify-between items-center">
-                  <div>
-                    <span class="branding text-[12px] py-[6px] px-[16px] rounded-[30px] border border-[#ffffff1a] ">Branding</span>
-                    <h6 class="line-height-1 text-[18px] font-[500] mt-[15px]">
-                      <a href="project-details.html">Luxury Modern Website</a>
-                    </h6>
-                  </div>
-                  <div class="flex justify-end w-[50px] h-[50] ">
-                    <div class="arrow  h-[50px] w-[50px]">
-                      <a class="h-[50px] w-[50px] text-[#fff] overflow-hidden" href="project-details.html">
-                  
-                        <svg class="arrow inline-block w-[25px]  stroke-[#fff] fill-[#fff] -rotate-45 ml-[15px]
-                        " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.2 32.3" xml:space="preserve" style="stroke-width: 2;">
-                          <line x1="0" y1="16" x2="33" y2="16"></line>
-                          <line x1="17.3" y1="0.7" x2="33.2" y2="16.5"></line>
-                          <line x1="17.3" y1="31.6" x2="33.5" y2="15.4"></line>
-                      </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-
-        <!-- ==================== End Portfolio ==================== -->
-
-        <!-- ==================== Start Testimonials ==================== -->
-
-        <div class="sec-box testimonials section-padding relative">
-          <div class="w-full flex justify-center md:justify-end bg-dark ">
-            <div class="bg-sub_dark w-full md:w-[calc(100%-50px)] rounded-l-[30px] py-[100px] relative">
-              <div class="pad-left pl-[15px] md:pl-[100px]">
-                <div class="sec-head mb-[80px] wow fadeInUp">
-                  <div class="w-full">
-                    <div class="flex flex-col w-full md:w-[40.33%]">
-                      <h6 class="tracking-widest  uppercase font-[14px] font-[300] opacity-[70%] mb-[15px]">Testimonials</h6>
-                      <h3 class="text-[24px] md:text-[38px] font-[500] w-full ">
-                        <div>
-
-                          Trusted by
-                        </div>
-                         <div class="text-main w-full !inline-block">Hundered Clients</div>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="row flex flex-col md:flex-row">
-                  <div class="col-lg-9 w-full md:w-[75%]">
-                    <div
-                      class="testim-swiper wow fadeIn"
-                      data-carousel="swiper"
-                      data-item="1"
-                      data-space="30"
-                      data-speed="1000"
-                    >
-                      <div
-                        id="content-carousel-container-unq-testim"
-                        class="swiper-container"
-                        data-swiper="container"
-                      >
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="item flex">
-                              <div class="hidden md:block">
-                                <div class="icon-img-60 w-[60px] mr-[60px]">
-                                  <img
-                                    src="assets/imgs/svg-assets/quote.png"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                              <div>
-                                <div class="cont mb-[30px]">
-                                  <div class="flex items-center">
-                                    <div class="rate-stars text-[12px]">
-                                      <span class="rate text-main">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                      </span>
-                                      <span class="text-[12px] opacity-[70%] ml-[10px]"
-                                        >(71 Reviews)</span
-                                      >
-                                    </div>
-                                  </div>
-                                  <p class="text-[20px] mt-[15px] text-[#ddd] font-[300]">
-                                    We have purchased well into the thousands of
-                                    items, but this is without doubt one of the best
-                                    we’ve have been lucky enough to work on, the
-                                    attention to detail apparent throughout, and the
-                                    delivery is impressively intuitive.
-                                  </p>
-                                </div>
-                                <div class="flex items-center">
-                                  <div>
-                                    <div class="img w-[70px] h-[70px] overflow-hidden rounded-full">
-                                      <img src="assets/imgs/testim/1.jpg" alt="" />
-                                    </div>
-                                  </div>
-                                  <div class="ml-[30px]">
-                                    <div class="info">
-                                      <h6 class="text-main">Leonard Heiser</h6>
-                                      <span class="text-[13px] mt-[10px] opacity-[80%]"
-                                        >Envato customer</span
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="item flex">
-                              <div class="hidden md:block">
-                                <div class="icon-img-60 w-[60px] mr-[60px]">
-                                  <img
-                                    src="assets/imgs/svg-assets/quote.png"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                              <div>
-                                <div class="cont mb-[30px]">
-                                  <div class="flex items-center">
-                                    <div class="rate-stars text-[12px]">
-                                      <span class="rate text-main">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                      </span>
-                                      <span class="text-[12px] opacity-[70%] ml-[10px]"
-                                        >(71 Reviews)</span
-                                      >
-                                    </div>
-                                  </div>
-                                  <p class="text-[20px] mt-[15px] text-[#ddd] font-[300]">
-                                    We have purchased well into the thousands of
-                                    items, but this is without doubt one of the best
-                                    we’ve have been lucky enough to work on, the
-                                    attention to detail apparent throughout, and the
-                                    delivery is impressively intuitive.
-                                  </p>
-                                </div>
-                                <div class="flex items-center">
-                                  <div>
-                                    <div class="img w-[70px] h-[70px] overflow-hidden rounded-full">
-                                      <img src="assets/imgs/testim/2.jpg" alt="" />
-                                    </div>
-                                  </div>
-                                  <div class="ml-[30px]">
-                                    <div class="info">
-                                      <h6 class="text-main">Leonard Heiser</h6>
-                                      <span class="text-[13px] mt-[10px] opacity-[80%]"
-                                        >Envato customer</span
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="item flex">
-                              <div class="hidden md:block">
-                                <div class="icon-img-60 w-[60px] mr-[60px]">
-                                  <img
-                                    src="assets/imgs/svg-assets/quote.png"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                              <div>
-                                <div class="cont mb-[30px]">
-                                  <div class="flex items-center">
-                                    <div class="rate-stars text-[12px]">
-                                      <span class="rate text-main">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                      </span>
-                                      <span class="text-[12px] opacity-[70%] ml-[10px]"
-                                        >(71 Reviews)</span
-                                      >
-                                    </div>
-                                  </div>
-                                  <p class="text-[20px] mt-[15px] text-[#ddd] font-[300]">
-                                    We have purchased well into the thousands of
-                                    items, but this is without doubt one of the best
-                                    we’ve have been lucky enough to work on, the
-                                    attention to detail apparent throughout, and the
-                                    delivery is impressively intuitive.
-                                  </p>
-                                </div>
-                                <div class="flex items-center">
-                                  <div>
-                                    <div class="img w-[70px] h-[70px] overflow-hidden rounded-full">
-                                      <img src="assets/imgs/testim/3.jpg" alt="" />
-                                    </div>
-                                  </div>
-                                  <div class="ml-[30px]">
-                                    <div class="info">
-                                      <h6 class="text-main">Leonard Heiser</h6>
-                                      <span class="text-[13px] mt-[10px] opacity-[80%]"
-                                        >Envato customer</span
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                         
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 w-full md:w-[25%] px-[15px] flex items-end justify-end">
-                    <div
-                      class="relative z-10 testim-controls arrow-out flex mr-[20px] ml-auto"
-                    >
-                      <div
-                        class="swiper-button-prev !w-[50px] transform rotate-180 !static !inline-block swiper-button-disabled border rounded-full border-[#ffffff33] !h-[50px]  !flex !items-center !justify-center !text-center"
-                        tabindex="0"
-                        role="button"
-                        aria-label="Previous slide"
-                        aria-disabled="true"
-                      >
-                        <div class="left text-[#fff]   h-[20px] w-[20px] " >
-                          <svg
-                            style="display: inline"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M17.2031 10.3281L11.5781 15.9531C11.535 15.9961 11.4839 16.0303 11.4276 16.0536C11.3713 16.077 11.3109 16.089 11.25 16.089C11.1891 16.089 11.1287 16.077 11.0724 16.0536C11.0161 16.0303 10.965 15.9961 10.9219 15.9531C10.8788 15.91 10.8446 15.8588 10.8213 15.8025C10.798 15.7462 10.786 15.6859 10.786 15.6249C10.786 15.564 10.798 15.5036 10.8213 15.4473C10.8446 15.391 10.8788 15.3399 10.9219 15.2968L15.7422 10.4687H3.125C3.00068 10.4687 2.88145 10.4193 2.79354 10.3314C2.70564 10.2435 2.65625 10.1242 2.65625 9.99993C2.65625 9.87561 2.70564 9.75638 2.79354 9.66847C2.88145 9.58056 3.00068 9.53118 3.125 9.53118H15.7422L10.9219 4.70305C10.8349 4.61603 10.786 4.498 10.786 4.37493C10.786 4.25186 10.8349 4.13383 10.9219 4.0468C11.0089 3.95978 11.1269 3.91089 11.25 3.91089C11.3731 3.91089 11.4911 3.95978 11.5781 4.0468L17.2031 9.6718C17.2476 9.71412 17.2829 9.76503 17.3071 9.82143C17.3313 9.87784 17.3438 9.93856 17.3438 9.99993C17.3438 10.0613 17.3313 10.122 17.3071 10.1784C17.2829 10.2348 17.2476 10.2857 17.2031 10.3281Z"
-                              fill="currentColor"
-                            ></path>
-                          </svg>
-                        </div>
-                      </div>
-                   
-                      <div
-                        class="swiper-button-next !static !inline-block swiper-button-disabled border rounded-full border-[#ffffff33] !h-[50px] !w-[50px] !flex !items-center !justify-center !text-center ml-[50px]"
-                        tabindex="0"
-                        role="button"
-                        aria-label="Next slide"
-                        aria-disabled="false"
-                      >
-                        <div class="right text-[#fff]   h-[20px] w-[20px] ">
-                          <svg
-                            style="display: inline"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M17.2031 10.3281L11.5781 15.9531C11.535 15.9961 11.4839 16.0303 11.4276 16.0536C11.3713 16.077 11.3109 16.089 11.25 16.089C11.1891 16.089 11.1287 16.077 11.0724 16.0536C11.0161 16.0303 10.965 15.9961 10.9219 15.9531C10.8788 15.91 10.8446 15.8588 10.8213 15.8025C10.798 15.7462 10.786 15.6859 10.786 15.6249C10.786 15.564 10.798 15.5036 10.8213 15.4473C10.8446 15.391 10.8788 15.3399 10.9219 15.2968L15.7422 10.4687H3.125C3.00068 10.4687 2.88145 10.4193 2.79354 10.3314C2.70564 10.2435 2.65625 10.1242 2.65625 9.99993C2.65625 9.87561 2.70564 9.75638 2.79354 9.66847C2.88145 9.58056 3.00068 9.53118 3.125 9.53118H15.7422L10.9219 4.70305C10.8349 4.61603 10.786 4.498 10.786 4.37493C10.786 4.25186 10.8349 4.13383 10.9219 4.0468C11.0089 3.95978 11.1269 3.91089 11.25 3.91089C11.3731 3.91089 11.4911 3.95978 11.5781 4.0468L17.2031 9.6718C17.2476 9.71412 17.2829 9.76503 17.3071 9.82143C17.3313 9.87784 17.3438 9.93856 17.3438 9.99993C17.3438 10.0613 17.3313 10.122 17.3071 10.1784C17.2829 10.2348 17.2476 10.2857 17.2031 10.3281Z"
-                              fill="currentColor"
-                            ></path>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-          </div> 
-         
-          
-          <span class="icon-qoute  absolute text-dark text-[100px] top-[-50px] md:text-[140px] md:top-[-70px] lg:text-[200px] lg:top-[-95px] right-[10%]">
-            <i class="fas fa-quote-left"></i>
-          </span>
-        </div>
-
-        <!-- ==================== End Testimonials ==================== -->
-
-        <!-- ==================== Start price ==================== -->
-
-        <div class="sec-box price section-padding py-[100px] rounded-tr-[30px] px-[15px] md:px-[40px] lg:px-[50px] bg-dark" data-scroll-index="4">
-          <div class="sec-head mb-[80px] wow fadeInUp">
-            <div class="flex justify-center">
-              <div class="md:w-[50%] w-full text-center">
-                <h6 class="tracking-widest uppercase text-[14px] font-[300] opacity-[70%] mb-[15px]">Best Pricing</h6>
-                <h3 class="text-[24px] md:text-[38px] font-[500] "><span class="text-main">Flexible</span> Pricing Plan</h3>
-              </div>
-            </div>
-          </div>
-          <div class="grid lg:grid-cols-3 gap-10 grid-cols-1 md-marg mx-[-25px]">
-            <div class="col-lg-4 flex px-[25px] justify-center items-center">
-              <div
-                class="item w-full px-[40px]  md:px-[10px] lg:px-[10px] xl:px-[40px] py-[60px] bg-sub_dark relative mt-[50px] rounded-r-[10px] md-mb50 wow fadeIn"
-                data-wow-delay=".2s"
-              >
-                <div class="top-curv">
-                  <span class="left absolute bg-sub_dark !top-[-50px] !left-0 !w-[80px] !h-[50px] rounded-t-[10px]  after:absolute after:right-[-35px] after:bottom-0 after:w-0 after:h-0 after:border-solid  after:border-r-[37px] after:border-r-transparent after:border-b-[45px] after:border-b-sub_dark  after:bg-transparent after:border-box after:content-[''] "></span>
-                  <h6 class="type absolute  top-[-50px] left-[50%] transform translate-x-[-50%] py-[10px] px-[20px] text-dark font-[500] text-[13px] bg-main rounded-[30px] uppercase lg:w-auto text-center w-[calc(100%-240px)]">Basic</h6>
-                  <span class="right absolute bg-sub_dark top-[-50px] right-0 w-[80px] h-[50px] rounded-t-[10px] after:absolute after:left-[-48px] after:bottom-0 after:w-0 after:h-0 after:border-solid  after:border-l-[50px] after:border-l-transparent after:border-b-[45px] after:border-b-sub_dark  after:bg-transparent after:border-box after:content-[''] "></span>
-                </div>
-
-                <div class="content">
-                  <div
-                    class="amount flex items-end pb-[50px] mb-[50px] bord-thin-bottom border-b border-[#ffffff1a]"
-                  >
-                    <h2 class="text-main text-[28px] md:text-[45px] font-[500]">$19</h2>
-                    <p class="ml-[20px] md:text-[20px] text-[14px] font-[300] text-[#ddd]">/ </br> hour</p>
-                  </div>
-                  <div class="feat">
-                    <ul class="rest">
-                      <li class="flex mb-[15px]">
-                        <i class="fas fa-check text-[13px] text-main pt-[3px] mr-[10px] font-[900]"></i>
-                        <span>Need your wireframe</span>
-                      </li>
-                      <li class="flex mb-[15px]">
-                        <i class="fas fa-check text-[13px] text-main pt-[3px] mr-[10px] font-[900]"></i>
-                        <span>Design with Figma, Framer</span>
-                      </li >
-                      <li class="flex mb-[15px]">
-                        <i class="fas fa-check text-[13px] text-main pt-[3px] mr-[10px] font-[900]"></i>
-                        <span
-                          >Implement with Webflow, React, WordPress,
-                          Laravel/PHP</span
-                        >
-                      </li>
-                      <li class="flex mb-[15px] ">
-                        <i class="fas fa-check text-[13px] text-main pt-[3px] mr-[10px] font-[900]"></i>
-                        <span>Support 6 months</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="text-center mt-[50px]">
-                    <div class="butn-presv">
-                      <a
-                        href="#0"
-                        class="butn butn-md butn-bord py-[14px] px-[35px] rounded-[5px] border border-[#fff] text-[#fff] bg-transparent hover:bg-[#fff] hover:text-dark transition-all duration-500   uppercase w-full "
-                      >
-                        Get Started
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 flex px-[25px] justify-center items-center">
-              <div
-                class="item w-full px-[40px]  md:px-[10px] lg:px-[10px] xl:px-[40px] py-[60px] bg-sub_dark relative mt-[50px] rounded-r-[10px] md-mb50 wow fadeIn"
-                data-wow-delay=".2s"
-              >
-                <div class="top-curv">
-                  <span class="left absolute bg-sub_dark !top-[-50px] !left-0 !w-[80px] !h-[50px] rounded-t-[10px]  after:absolute after:right-[-35px] after:bottom-0 after:w-0 after:h-0 after:border-solid  after:border-r-[37px] after:border-r-transparent after:border-b-[45px] after:border-b-sub_dark  after:bg-transparent after:border-box after:content-[''] "></span>
-                  <h6 class="type absolute  top-[-50px] left-[50%] transform translate-x-[-50%] py-[10px] px-[20px] text-dark font-[500] text-[13px] bg-main rounded-[30px] uppercase lg:w-auto text-center w-[calc(100%-240px)]">Basic</h6>
-                  <span class="right absolute bg-sub_dark top-[-50px] right-0 w-[80px] h-[50px] rounded-t-[10px] after:absolute after:left-[-48px] after:bottom-0 after:w-0 after:h-0 after:border-solid  after:border-l-[50px] after:border-l-transparent after:border-b-[45px] after:border-b-sub_dark  after:bg-transparent after:border-box after:content-[''] "></span>
-                </div>
-
-                <div class="content">
-                  <div
-                    class="amount flex items-end pb-[50px] mb-[50px] bord-thin-bottom border-b border-[#ffffff1a]"
-                  >
-                    <h2 class="text-main text-[28px] md:text-[45px] font-[500]">$39</h2>
-                    <p class="ml-[20px] md:text-[20px] text-[14px] font-[300] text-[#ddd]">/ </br> hour</p>
-                  </div>
-                  <div class="feat">
-                    <ul class="rest">
-                      <li class="flex mb-[15px]">
-                        <i class="fas fa-check text-[13px] text-main pt-[3px] mr-[10px] font-[900]"></i>
-                        <span>Need your wireframe</span>
-                      </li>
-                      <li class="flex mb-[15px]">
-                        <i class="fas fa-check text-[13px] text-main pt-[3px] mr-[10px] font-[900]"></i>
-                        <span>Design with Figma, Framer</span>
-                      </li >
-                      <li class="flex mb-[15px]">
-                        <i class="fas fa-check text-[13px] text-main pt-[3px] mr-[10px] font-[900]"></i>
-                        <span
-                          >Implement with Webflow, React, WordPress,
-                          Laravel/PHP</span
-                        >
-                      </li>
-                      <li class="flex mb-[15px] ">
-                        <i class="fas fa-check text-[13px] text-main pt-[3px] mr-[10px] font-[900]"></i>
-                        <span>Support 6 months</span>
-                      </li>
-                      <li class="flex mb-[15px] ">
-                        <i class="fas fa-check text-[13px] text-main pt-[3px] mr-[10px] font-[900]"></i>
-                        <span>
-                          Your project alway be priority
-                          </span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="text-center mt-[50px]">
-                    <div class="butn-presv">
-                      <a
-                        href="#0"
-                        class="butn butn-md butn-bord py-[14px] px-[35px] rounded-[5px] border border-[#fff] text-[#fff] bg-transparent hover:bg-[#fff] hover:text-dark transition-all duration-500   uppercase w-full "
-                      >
-                        Get Started
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 flex px-[25px] justify-center items-center">
-              <div
-                class="item w-full px-[40px]  md:px-[10px] lg:px-[10px] xl:px-[40px] py-[60px] bg-sub_dark relative mt-[50px] rounded-r-[10px] md-mb50 wow fadeIn"
-                data-wow-delay=".2s"
-              >
-                <div class="top-curv">
-                  <span class="left absolute bg-sub_dark !top-[-50px] !left-0 !w-[80px] !h-[50px] rounded-t-[10px]  after:absolute after:right-[-35px] after:bottom-0 after:w-0 after:h-0 after:border-solid  after:border-r-[37px] after:border-r-transparent after:border-b-[45px] after:border-b-sub_dark  after:bg-transparent after:border-box after:content-[''] "></span>
-                  <h6 class="type absolute  top-[-50px] left-[50%] transform translate-x-[-50%] py-[10px] px-[20px] text-dark font-[500] text-[13px] bg-main rounded-[30px] uppercase lg:w-auto text-center w-[calc(100%-240px)]">Basic</h6>
-                  <span class="right absolute bg-sub_dark top-[-50px] right-0 w-[80px] h-[50px] rounded-t-[10px] after:absolute after:left-[-48px] after:bottom-0 after:w-0 after:h-0 after:border-solid  after:border-l-[50px] after:border-l-transparent after:border-b-[45px] after:border-b-sub_dark  after:bg-transparent after:border-box after:content-[''] "></span>
-                </div>
-
-                <div class="content">
-                  <div
-                    class="amount flex items-end pb-[50px] mb-[50px] bord-thin-bottom border-b border-[#ffffff1a]"
-                  >
-                    <h2 class="text-main text-[28px] md:text-[45px] font-[500]">$59</h2>
-                    <p class="ml-[20px] md:text-[20px] text-[14px] font-[300] text-[#ddd]">/ </br> hour</p>
-                  </div>
-                  <div class="feat">
-                    <ul class="rest">
-                      <li class="flex mb-[15px]">
-                        <i class="fas fa-check text-[13px] text-main pt-[3px] mr-[10px] font-[900]"></i>
-                        <span>Need your wireframe</span>
-                      </li>
-                      <li class="flex mb-[15px]">
-                        <i class="fas fa-check text-[13px] text-main pt-[3px] mr-[10px] font-[900]"></i>
-                        <span>Design with Figma, Framer</span>
-                      </li >
-                      <li class="flex mb-[15px]">
-                        <i class="fas fa-check text-[13px] text-main pt-[3px] mr-[10px] font-[900]"></i>
-                        <span
-                          >Implement with Webflow, React, WordPress,
-                          Laravel/PHP</span
-                        >
-                      </li>
-                      <li class="flex mb-[15px] ">
-                        <i class="fas fa-check text-[13px] text-main pt-[3px] mr-[10px] font-[900]"></i>
-                        <span>Support 6 months</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="text-center mt-[50px]">
-                    <div class="butn-presv">
-                      <a
-                        href="#0"
-                        class="butn butn-md butn-bord py-[14px] px-[35px] rounded-[5px] border border-[#fff] text-[#fff] bg-transparent hover:bg-[#fff] hover:text-dark transition-all duration-500   uppercase w-full "
-                      >
-                        Get Started
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-         
-          </div>
-        </div>
-
-        <!-- ==================== End price ==================== -->
-
-        <!-- ==================== Start Contact ==================== -->
-
-        <div
-          class="sec-box contact section-padding bord-thin-top py-[100px] border-t-[2px] border-sub_dark relative overflow-hidden px-[15px] md:px-[40px] lg:px-[50px] bg-dark"
-          data-scroll-index="5"
-        >
-          <div class="grid md:grid-cols-12 grid-cols-1">
-            <div class="md:col-span-5 col-span-1">
-              <div class="sec-head md-mb80 wow fadeIn">
-                <h6 class="sub-title mb-[15px] opacity-[70%] uppercase tracking-widest font-[300] text-[14px]">Get In Touch</h6>
-                <h2 class="md:text-[50px] text-[30px] font-[500] ">Let's make your brand brilliant!</h2>
-                <p class="text-[15px] opacity-[70%] font-[300] mt-[10px]">
-                  If you would like to work with us or just want to get in
-                  touch, we’d love to hear from you!
-                </p>
-                <div class="phone text-[30px] font-[600] mt-[30px] underline text-main">
-                  <a href="#0" class="main-color">+1 840 841 25 69</a>
-                </div>
-                <ul class="rest social-text flex mt-[60px] mb-[30px]">
-                  <li class="mr-[30px]  cursor-pointer">
-                    <a href="#0" class="hover-this cursor-pointer "
-                      ><span class=" inline-block hover-anim">Facebook</span></a
-                    >
-                  </li>
-                  <li class="mr-[30px]">
-                    <a href="#0" class="hover-this"
-                      ><span class="hover-anim inline-block">Twitter</span></a
-                    >
-                  </li>
-                  <li class="mr-[30px]">
-                    <a href="#0" class="hover-this"
-                      ><span class="hover-anim inline-block">LinkedIn</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#0" class="hover-this"
-                      ><span class="hover-anim inline-block">Instagram</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="md:col-span-7 col-span-1 valign flex justify-center items-center">
-              <div class="w-full wow fadeIn">
-                <form id="contact-form" method="post" action="contact.php">
-                  <div class="messages"></div>
-
-                  <div class="controls grid grid-cols-2 row">
-                    <div class="col-lg-6 col-span-1 px-[15px]">
-                      <div class="form-group mb-[30px]">
-                        <input
-                        class="w-full p-[15px] bg-transparent border border-[#444343] text-[#fff] focus:border-[#fff] rounded-[5px] transition-all duration-500 "
-                          id="form_name"
-                          type="text"
-                          name="name"
-                          placeholder="Name"
-                          required="required"
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6 col-span-1 px-[15px]">
-                      <div class="form-group mb-30">
-                        <input
-                        class="w-full p-[15px] bg-transparent border border-[#444343] text-[#fff] focus:border-[#fff] rounded-[5px] transition-all duration-500 "
-
-                          id="form_email"
-                          type="email"
-                          name="email"
-                          placeholder="Email"
-                          required="required"
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-12 col-span-2 px-[15px]">
-                      <div class="form-group mb-[30px]">
-                        <input
-                        class="w-full p-[15px] bg-transparent border border-[#444343] text-[#fff] focus:border-[#fff] rounded-[5px] transition-all duration-500 "
-
-                          id="form_subject"
-                          type="text"
-                          name="subject"
-                          placeholder="Subject"
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-12 col-span-2 px-[15px]">
-                      <div class="form-group">
-                        <textarea
-                        class="w-full p-[15px] bg-transparent border border-[#444343] text-[#fff] focus:border-[#fff] rounded-[5px] transition-all duration-500 "
-
-                          id="form_message"
-                          name="message"
-                          placeholder="Message"
-                          rows="4"
-                          required="required"
-                        ></textarea>
-                      </div>
-                      <div class="mt-[30px]">
-                        <button class="px-[35px] hover:text-dark  py-[15px] bg-transparent border border-[#444343] w-full tracking-widest text-[13px] relative overflow-hidden rounded-[5px] transtion-all duration-500 uppercase after:content-[''] after:absolute after:top-0 after:left-0 after:w-[5px] after:h-full after:bg-main after:transition-all duration-500 after:duration-500 hover:after:w-full"  type="submit ">
-                          <span class="text bg-transparent relative !z-10">Send A Message</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ==================== End Contact ==================== -->
-
-        <!-- ==================== Start Blog ==================== -->
-
-        <div
-          class="sec-box blog section-padding bord-thin-top py-[100px] px-[15px] md:px-[40px] lg:px-[50px] bg-dark border border-t-[2px] border-sub_dark"
-          data-scroll-index="6"
-        >
-          <div class="sec-head mb-[80px]">
-            <div class="grid md:grid-cols-2 grid-cols-1">
-              <div class="col-lg-6 wow fadeInUp px-[15px]">
-                <h6 class="sub-title uppercase font-[300] text-[14px] tracking-widest opacity-[70%] mb-[15px]">Our Blog</h6>
-                <h3 class="text-[24] md:text-[38px]">Latest News & <span class="text-main">Blog</span></h3>
-              </div>
-              <div class="col-lg-6 valign">
-                <div class="go-more w-full flex justify-end">
-                  <a href="blogs.html" class="d-flex">
-                    <span class="flex">View All Works <svg class="inline-block w-[18px] h-[18px] stroke-[#fff] fill-[#fff] -rotate-45 ml-[15px]
-                      " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.2 32.3" xml:space="preserve" style="stroke-width: 2;">
-                        <line x1="0" y1="16" x2="33" y2="16"></line>
-                        <line x1="17.3" y1="0.7" x2="33.2" y2="16.5"></line>
-                        <line x1="17.3" y1="31.6" x2="33.5" y2="15.4"></line>
-                    </svg></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="grid md:grid-cols-3 grid-cols-1 md:gap-x-5 ">
-            <div class="col-lg-4 px-[15px]">
-              <div class="item md-mb30 wow fadeIn border border-sub_dark rounded-[5px] " data-wow-delay=".2s">
-                <div class="img rounded-t-[5px] overflow-hidden">
-                  <img class="w-full h-auto" src="assets/imgs/blog/1.jpg" alt="" />
-                </div>
-                <div class="box px-[10px]">
-                  <div class="cont relative bg-sub_dark p-[40px] rounded-[5px] mt-[-30px] z-10">
-                    <span class="date rounded-[30px] text-[11px] text-[#ddd] py-[5px] px-[15px] uppercase mb-[10px] border border-[#444343] "
-                      ><i class="fas fa-calendar-alt mr-[10px] text-main"></i> 6 ,
-                      Aug 2022</span
-                    >
-                    <h5 class="mt-[10px] text-[22px]">
-                      <a class="underline" href="blog-details.html"
-                        >12 unique examples of portfolio websites.</a
-                      >
-                    </h5>
-                  </div>
-                  <div class="info flex items-center px-[15px] py-[20px] text-[13px]">
-                    <div>
-                      <span
-                        ><i class="fas fa-comments text-[12px] mr-[5px]"></i> 2
-                        Comments</span
-                      >
-                    </div>
-                    <div class="ml-auto">
-                      <a class="flex" href="blog-details.html"
-                        >Read More
-                        <svg
-                          class="ml-[5px]"
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M17.2031 10.3281L11.5781 15.9531C11.535 15.9961 11.4839 16.0303 11.4276 16.0536C11.3713 16.077 11.3109 16.089 11.25 16.089C11.1891 16.089 11.1287 16.077 11.0724 16.0536C11.0161 16.0303 10.965 15.9961 10.9219 15.9531C10.8788 15.91 10.8446 15.8588 10.8213 15.8025C10.798 15.7462 10.786 15.6859 10.786 15.6249C10.786 15.564 10.798 15.5036 10.8213 15.4473C10.8446 15.391 10.8788 15.3399 10.9219 15.2968L15.7422 10.4687H3.125C3.00068 10.4687 2.88145 10.4193 2.79354 10.3314C2.70564 10.2435 2.65625 10.1242 2.65625 9.99993C2.65625 9.87561 2.70564 9.75638 2.79354 9.66847C2.88145 9.58056 3.00068 9.53118 3.125 9.53118H15.7422L10.9219 4.70305C10.8349 4.61603 10.786 4.498 10.786 4.37493C10.786 4.25186 10.8349 4.13383 10.9219 4.0468C11.0089 3.95978 11.1269 3.91089 11.25 3.91089C11.3731 3.91089 11.4911 3.95978 11.5781 4.0468L17.2031 9.6718C17.2476 9.71412 17.2829 9.76503 17.3071 9.82143C17.3313 9.87784 17.3438 9.93856 17.3438 9.99993C17.3438 10.0613 17.3313 10.122 17.3071 10.1784C17.2829 10.2348 17.2476 10.2857 17.2031 10.3281Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 px-[15px]">
-              <div class="item md-mb30 wow fadeIn border border-sub_dark rounded-[5px] " data-wow-delay=".2s">
-                <div class="img rounded-t-[5px] overflow-hidden">
-                  <img class="w-full h-auto" src="assets/imgs/blog/2.jpg" alt="" />
-                </div>
-                <div class="box px-[10px]">
-                  <div class="cont relative bg-sub_dark p-[40px] rounded-[5px] mt-[-30px] z-10">
-                    <span class="date rounded-[30px] text-[11px] text-[#ddd] py-[5px] px-[15px] uppercase mb-[10px] border border-[#444343] "
-                      ><i class="fas fa-calendar-alt mr-[10px] text-main"></i> 6 ,
-                      Aug 2022</span
-                    >
-                    <h5 class="mt-[10px] text-[22px]">
-                      <a class="underline" href="blog-details.html"
-                        >12 unique examples of portfolio websites.</a
-                      >
-                    </h5>
-                  </div>
-                  <div class="info flex items-center px-[15px] py-[20px] text-[13px]">
-                    <div>
-                      <span
-                        ><i class="fas fa-comments text-[12px] mr-[5px]"></i> 2
-                        Comments</span
-                      >
-                    </div>
-                    <div class="ml-auto">
-                      <a class="flex" href="blog-details.html"
-                        >Read More
-                        <svg
-                          class="ml-[5px]"
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M17.2031 10.3281L11.5781 15.9531C11.535 15.9961 11.4839 16.0303 11.4276 16.0536C11.3713 16.077 11.3109 16.089 11.25 16.089C11.1891 16.089 11.1287 16.077 11.0724 16.0536C11.0161 16.0303 10.965 15.9961 10.9219 15.9531C10.8788 15.91 10.8446 15.8588 10.8213 15.8025C10.798 15.7462 10.786 15.6859 10.786 15.6249C10.786 15.564 10.798 15.5036 10.8213 15.4473C10.8446 15.391 10.8788 15.3399 10.9219 15.2968L15.7422 10.4687H3.125C3.00068 10.4687 2.88145 10.4193 2.79354 10.3314C2.70564 10.2435 2.65625 10.1242 2.65625 9.99993C2.65625 9.87561 2.70564 9.75638 2.79354 9.66847C2.88145 9.58056 3.00068 9.53118 3.125 9.53118H15.7422L10.9219 4.70305C10.8349 4.61603 10.786 4.498 10.786 4.37493C10.786 4.25186 10.8349 4.13383 10.9219 4.0468C11.0089 3.95978 11.1269 3.91089 11.25 3.91089C11.3731 3.91089 11.4911 3.95978 11.5781 4.0468L17.2031 9.6718C17.2476 9.71412 17.2829 9.76503 17.3071 9.82143C17.3313 9.87784 17.3438 9.93856 17.3438 9.99993C17.3438 10.0613 17.3313 10.122 17.3071 10.1784C17.2829 10.2348 17.2476 10.2857 17.2031 10.3281Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 px-[15px]">
-              <div class="item md-mb30 wow fadeIn border border-sub_dark rounded-[5px] " data-wow-delay=".2s">
-                <div class="img rounded-t-[5px] overflow-hidden">
-                  <img class="w-full h-auto" src="assets/imgs/blog/3.jpg" alt="" />
-                </div>
-                <div class="box px-[10px]">
-                  <div class="cont relative bg-sub_dark p-[40px] rounded-[5px] mt-[-30px] z-10">
-                    <span class="date rounded-[30px] text-[11px] text-[#ddd] py-[5px] px-[15px] uppercase mb-[10px] border border-[#444343] "
-                      ><i class="fas fa-calendar-alt mr-[10px] text-main"></i> 6 ,
-                      Aug 2022</span
-                    >
-                    <h5 class="mt-[10px] text-[22px]">
-                      <a class="underline" href="blog-details.html"
-                        >12 unique examples of portfolio websites.</a
-                      >
-                    </h5>
-                  </div>
-                  <div class="info flex items-center px-[15px] py-[20px] text-[13px]">
-                    <div>
-                      <span
-                        ><i class="fas fa-comments text-[12px] mr-[5px]"></i> 2
-                        Comments</span
-                      >
-                    </div>
-                    <div class="ml-auto">
-                      <a class="flex" href="blog-details.html"
-                        >Read More
-                        <svg
-                          class="ml-[5px]"
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M17.2031 10.3281L11.5781 15.9531C11.535 15.9961 11.4839 16.0303 11.4276 16.0536C11.3713 16.077 11.3109 16.089 11.25 16.089C11.1891 16.089 11.1287 16.077 11.0724 16.0536C11.0161 16.0303 10.965 15.9961 10.9219 15.9531C10.8788 15.91 10.8446 15.8588 10.8213 15.8025C10.798 15.7462 10.786 15.6859 10.786 15.6249C10.786 15.564 10.798 15.5036 10.8213 15.4473C10.8446 15.391 10.8788 15.3399 10.9219 15.2968L15.7422 10.4687H3.125C3.00068 10.4687 2.88145 10.4193 2.79354 10.3314C2.70564 10.2435 2.65625 10.1242 2.65625 9.99993C2.65625 9.87561 2.70564 9.75638 2.79354 9.66847C2.88145 9.58056 3.00068 9.53118 3.125 9.53118H15.7422L10.9219 4.70305C10.8349 4.61603 10.786 4.498 10.786 4.37493C10.786 4.25186 10.8349 4.13383 10.9219 4.0468C11.0089 3.95978 11.1269 3.91089 11.25 3.91089C11.3731 3.91089 11.4911 3.95978 11.5781 4.0468L17.2031 9.6718C17.2476 9.71412 17.2829 9.76503 17.3071 9.82143C17.3313 9.87784 17.3438 9.93856 17.3438 9.99993C17.3438 10.0613 17.3313 10.122 17.3071 10.1784C17.2829 10.2348 17.2476 10.2857 17.2031 10.3281Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-           
-          </div>
-        </div>
-
-      </section>
-    </main>
-
-    <!-- ==================== Start Footer ==================== -->
-
-    <footer class="pb-[30px] pt-[30px]">
-      <div class="w-full">
-        <div class="w-full">
-          <div class="col-12 px-[30px] w-full">
-            <div class="text-center">
-              <p class="text-[13px] text-[#ddd] font-[300]">
-                © 2024 Gavi is Proudly Powered by
-                <span class="underline text-main"
-                  ><a
-                    href="https://themeforest.net/user/UiCamp"
-                    target="_blank"
-                    >UiCamp</a
-                  ></span
-                >
-              </p>
-            </div>
+            <a
+              href="./index.html#about"
+              class=" w-10 h-[50px] bg-clr_base rounded-[5px] flex justify-center items-center"
+            >
+              <i class="bi-arrow-up text-lg"> </i>
+            </a>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- ==================== End Footer ==================== -->
+    <script src="./assets/js/jquery-3.7.0.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-3.4.0.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
 
-    <!-- plugins -->
-    <script src="assets/js/plugins.js"></script>
-
-    <script src="assets/js/ScrollTrigger.min.js"></script>
-
-    <!-- custom scripts -->
-    <script src="assets/js/scripts.js"></script>
-    <link rel="stylesheet" href="/dark/assets/css/style.css" />
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
